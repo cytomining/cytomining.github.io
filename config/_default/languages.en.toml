@@ -1,0 +1,9 @@
+label = "English"
+weight = 1
+title = "Cytomining"
+
+[params]
+  description = "Essential tools, workflows, and best practices for single-cell image-based profiling."
+
+[params.author]
+  name = "Cytomining"

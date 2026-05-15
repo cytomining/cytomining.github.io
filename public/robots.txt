@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cytomining.github.io/sitemap.xml

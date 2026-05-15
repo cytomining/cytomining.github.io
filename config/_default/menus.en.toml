@@ -1,0 +1,29 @@
+[[main]]
+  name = "Tools"
+  pageRef = "tools"
+  weight = 10
+
+[[main]]
+  name = "Experimental tools"
+  pageRef = "experimental"
+  weight = 20
+
+[[main]]
+  name = "Media"
+  pageRef = "media"
+  weight = 30
+
+[[main]]
+  name = "About"
+  pageRef = "about"
+  weight = 40
+
+[[main]]
+  name = "History"
+  pageRef = "history"
+  weight = 50
+
+[[main]]
+  name = "Contact"
+  pageRef = "contact"
+  weight = 60

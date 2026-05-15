@@ -1,0 +1,114 @@
+/* Logo dark/light switching.
+   Congo toggles a .dark class on <html> via JS — the native
+   prefers-color-scheme media query inside <picture> tags does not respond
+   to this toggle, so we handle switching with CSS classes instead. */
+.logo-light {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.logo-dark {
+  display: none;
+  max-width: 100%;
+  height: auto;
+}
+html.dark .logo-light {
+  display: none;
+}
+html.dark .logo-dark {
+  display: block;
+}
+
+/* Experimental page — v2 callout and problem cards */
+html.dark .v2-callout {
+  background: #1e3a5f !important;
+  border-color: #3b82f6 !important;
+}
+html.dark .v2-callout p { color: #93c5fd !important; }
+html.dark .v2-callout strong { color: #bfdbfe !important; }
+html.dark .problem-card {
+  background: #1f2937 !important;
+  border-color: #374151 !important;
+}
+html.dark .problem-card p { color: #9ca3af !important; }
+html.dark .problem-card strong { color: #d1d5db !important; }
+html.dark .v2-pipeline-step-neutral {
+  background: #1f2937 !important;
+  border-color: #374151 !important;
+  color: #d1d5db !important;
+}
+html.dark .v2-pipeline-step-purple {
+  background: #2e1065 !important;
+  border-color: #4c1d95 !important;
+  color: #c4b5fd !important;
+}
+html.dark .v2-pipeline-step-blue {
+  background: #1e3a5f !important;
+  border-color: #1e40af !important;
+  color: #93c5fd !important;
+}
+html.dark .v2-pipeline-step-yellow {
+  background: #422006 !important;
+  border-color: #854d0e !important;
+  color: #fde68a !important;
+}
+html.dark .v2-pipeline-step-green {
+  background: #052e16 !important;
+  border-color: #166534 !important;
+  color: #86efac !important;
+}
+
+/* Hero entrance animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-fade-1 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.15s both; }
+.hero-fade-2 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.30s both; }
+.hero-fade-3 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.45s both; }
+.hero-fade-4 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.60s both; }
+.hero-fade-5 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.75s both; }
+
+/* List view logos */
+.list-logo-light { display: block; }
+.list-logo-dark  { display: none; }
+html.dark .list-logo-light { display: none !important; }
+html.dark .list-logo-dark  { display: block !important; }
+
+/* Pipeline step hover bounce (spring easing gives natural overshoot) */
+.pipeline-step {
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+}
+.pipeline-step:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.13);
+}
+html.dark .pipeline-step:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.45);
+}
+
+/* Pill icon */
+.pill-icon {
+  height: 14px;
+  width: 14px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 4px;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  top: -1px;
+}
+
+/* Hero dark mode overrides */
+html.dark .hero-tagline     { color: #9ca3af !important; }
+html.dark .hero-arrow       { color: #4b5563 !important; }
+html.dark .hero-stage-label { color: #6b7280 !important; }
+
+html.dark .hero-pill-neutral { background: #1f2937 !important; border-color: #374151 !important; color: #d1d5db !important; }
+html.dark .hero-pill-purple  { background: #2e1065 !important; border-color: #4c1d95 !important; color: #c4b5fd !important; }
+html.dark .hero-pill-blue    { background: #1e3a5f !important; border-color: #1e40af !important; color: #93c5fd !important; }
+html.dark .hero-pill-green   { background: #052e16 !important; border-color: #166534 !important; color: #86efac !important; }
+html.dark .hero-btn-primary  { background: #3b82f6 !important; }
+html.dark .hero-btn-outline  { border-color: #374151 !important; color: #d1d5db !important; }
+html.dark .hero-secondary-link { color: #6b7280 !important; border-bottom-color: #374151 !important; }

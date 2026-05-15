@@ -1,0 +1,12 @@
+baseURL = "https://cytomining.github.io/"
+locale = "en"
+title = "Cytomining"
+theme = "congo"
+
+enableRobotsTXT = true
+paginate = 10
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
