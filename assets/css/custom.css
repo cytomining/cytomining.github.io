@@ -1,3 +1,19 @@
+/* Page entrance animation — single pages use <article>, list/section pages use <header>+<section> */
+#main-content > article {
+  animation: fadeUp 0.6s cubic-bezier(0.22,1,0.36,1) 0.1s both;
+}
+#main-content > header {
+  animation: fadeUp 0.6s cubic-bezier(0.22,1,0.36,1) 0.1s both;
+}
+#main-content > section {
+  animation: fadeUp 0.6s cubic-bezier(0.22,1,0.36,1) 0.25s both;
+}
+
+/* Global font size reduction */
+html {
+  font-size: 90%;
+}
+
 /* Logo dark/light switching.
    Congo toggles a .dark class on <html> via JS — the native
    prefers-color-scheme media query inside <picture> tags does not respond
@@ -63,11 +79,14 @@ html.dark .v2-pipeline-step-green {
   from { opacity: 0; transform: translateY(28px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-.hero-fade-1 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.15s both; }
-.hero-fade-2 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.30s both; }
-.hero-fade-3 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.45s both; }
-.hero-fade-4 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.60s both; }
-.hero-fade-5 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.75s both; }
+.hero-fade-1 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.10s both; }
+.hero-fade-2 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.22s both; }
+.hero-fade-3 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.34s both; }
+.hero-fade-4 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.46s both; }
+.hero-fade-5 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.58s both; }
+.hero-fade-6 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.70s both; }
+.hero-fade-7 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.82s both; }
+.hero-fade-8 { animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.94s both; }
 
 /* List view logos */
 .list-logo-light { display: block; }
