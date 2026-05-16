@@ -1,9 +1,12 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 ---
+# Exclude vendored theme — it is not our code to lint
+exclude: ^themes/
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -11,17 +14,23 @@ repos:
       - id: detect-private-key
   # checking spelling
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.6
+    rev: v2.4.2
     hooks:
       - id: codespell
+        args:
+          # "patter" is the Cell Press journal identifier used in DOI URLs
+          - --ignore-words-list=patter
   # checking markdown formatting
   - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.17
+    rev: 1.0.0
     hooks:
       - id: mdformat
         additional_dependencies:
-          - mdformat-gfm
+          - mdformat-gfm==1.0.0
+          - mdformat-frontmatter==2.0.10
+  # HTML linting — exclude Hugo template files (contain {{ }} syntax)
   - repo: https://github.com/Lucas-C/pre-commit-hooks-nodejs
     rev: v1.1.2
     hooks:
       - id: htmllint
+        exclude: ^layouts/

@@ -21,6 +21,21 @@ hugo --minify
 
 The site is served at `http://localhost:1313/` by default.
 
+## Pre-commit hooks
+
+This repo uses [pre-commit](https://pre-commit.com/) to enforce formatting and catch common issues before every commit.
+
+```bash
+pip install pre-commit
+pre-commit install
+```
+
+After installation, hooks run automatically on `git commit`. To run them manually against all files:
+
+```bash
+pre-commit run --all-files
+```
+
 ## Adding or editing a tool page
 
 Tool pages live in `content/tools/`. Each file is a Markdown file with frontmatter.

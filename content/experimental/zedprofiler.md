@@ -1,6 +1,6 @@
 ---
-title: "zedprofiler"
-description: "3D feature extraction — extracts morphological features from volumetric microscopy images for CPU-efficient high-content profiling."
+title: zedprofiler
+description: 3D feature extraction — extracts morphological features from volumetric microscopy images for CPU-efficient high-content profiling.
 showDate: false
 showAuthor: false
 ---

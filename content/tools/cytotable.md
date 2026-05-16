@@ -1,9 +1,9 @@
 ---
-title: "CytoTable"
-description: "Upstream ingestion — converts raw CellProfiler, DeepProfiler, and IN Carta outputs into scalable, analysis-ready Parquet tables."
+title: CytoTable
+description: Upstream ingestion — converts raw CellProfiler, DeepProfiler, and IN Carta outputs into scalable, analysis-ready Parquet tables.
 showDate: false
 showAuthor: false
-logoUrl: "https://raw.githubusercontent.com/cytomining/CytoTable/main/logo/just-icon.png"
+logoUrl: https://raw.githubusercontent.com/cytomining/CytoTable/main/logo/just-icon.png
 ---
 
 <img class="logo-light" src="https://raw.githubusercontent.com/cytomining/CytoTable/main/logo/with-text-for-light-bg.png" alt="CytoTable logo" width="400">

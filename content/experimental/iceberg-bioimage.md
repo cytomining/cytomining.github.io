@@ -1,9 +1,9 @@
 ---
-title: "iceberg-bioimage"
-description: "Data cataloging — scans bioimaging stores and publishes image metadata to Cytomining-compatible Parquet warehouses via Apache Iceberg."
+title: iceberg-bioimage
+description: Data cataloging — scans bioimaging stores and publishes image metadata to Cytomining-compatible Parquet warehouses via Apache Iceberg.
 showDate: false
 showAuthor: false
-logoUrl: "https://raw.githubusercontent.com/WayScience/iceberg-bioimage/main/docs/src/_static/iceberg-bioimage-logo.png"
+logoUrl: https://raw.githubusercontent.com/WayScience/iceberg-bioimage/main/docs/src/_static/iceberg-bioimage-logo.png
 ---
 
 <img src="https://raw.githubusercontent.com/WayScience/iceberg-bioimage/main/docs/src/_static/iceberg-bioimage-logo.png" alt="iceberg-bioimage logo" width="400">

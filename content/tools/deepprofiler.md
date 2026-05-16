@@ -1,6 +1,6 @@
 ---
-title: "DeepProfiler"
-description: "Alternative feature extraction — deep learning embeddings from raw microscopy images, bypassing classical segmentation-and-measurement pipelines."
+title: DeepProfiler
+description: Alternative feature extraction — deep learning embeddings from raw microscopy images, bypassing classical segmentation-and-measurement pipelines.
 showDate: false
 showAuthor: false
 ---

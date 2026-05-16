@@ -1,9 +1,9 @@
 ---
-title: "coSMicQC"
-description: "Quality control step — flags and removes low-quality cells before profile processing to prevent artifacts from propagating downstream."
+title: coSMicQC
+description: Quality control step — flags and removes low-quality cells before profile processing to prevent artifacts from propagating downstream.
 showDate: false
 showAuthor: false
-logoUrl: "https://raw.githubusercontent.com/cytomining/coSMicQC/main/media/logo/just-icon.png"
+logoUrl: https://raw.githubusercontent.com/cytomining/coSMicQC/main/media/logo/just-icon.png
 ---
 
 <img class="logo-light" src="https://raw.githubusercontent.com/cytomining/coSMicQC/main/media/logo/with-text-for-light-bg.png" alt="coSMicQC logo" width="400">

@@ -1,9 +1,9 @@
 ---
-title: "buscar"
-description: "Hit calling — identifies biologically active perturbations from single-cell morphological profiles using distribution-level scoring."
+title: buscar
+description: Hit calling — identifies biologically active perturbations from single-cell morphological profiles using distribution-level scoring.
 showDate: false
 showAuthor: false
-logoUrl: "https://raw.githubusercontent.com/WayScience/buscar/main/logo/just-icon.png"
+logoUrl: https://raw.githubusercontent.com/WayScience/buscar/main/logo/just-icon.png
 ---
 
 <img class="logo-light" src="https://raw.githubusercontent.com/WayScience/buscar/main/logo/with-text-for-light-bg.png" alt="buscar logo" width="400">

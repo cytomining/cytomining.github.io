@@ -14,8 +14,8 @@ Open a [GitHub issue](https://github.com/cytomining/cytomining.github.io/issues)
 ## Contributing changes
 
 1. Fork the repository and create a branch from `main`.
-2. Make your changes. See [README.md](README.md) for local development setup.
-3. Open a pull request against `main` with a clear description of what changed and why.
+1. Make your changes. See [README.md](README.md) for local development setup.
+1. Open a pull request against `main` with a clear description of what changed and why.
 
 Please keep pull requests focused on a single change. All status checks must pass before merge.
 

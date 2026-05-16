@@ -1,9 +1,9 @@
 ---
-title: "OME-arrow"
-description: "Image storage — stores microscopy images alongside metadata and derived data in a unified, queryable Apache Arrow format."
+title: OME-arrow
+description: Image storage — stores microscopy images alongside metadata and derived data in a unified, queryable Apache Arrow format.
 showDate: false
 showAuthor: false
-logoUrl: "https://raw.githubusercontent.com/WayScience/OME-arrow/main/docs/src/_static/ome-arrow-logo.png"
+logoUrl: https://raw.githubusercontent.com/WayScience/OME-arrow/main/docs/src/_static/ome-arrow-logo.png
 ---
 
 <img src="https://raw.githubusercontent.com/WayScience/OME-arrow/main/docs/src/_static/ome-arrow-logo.png" alt="OME-arrow logo" width="400">
