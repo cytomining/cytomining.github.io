@@ -7,7 +7,7 @@ showAuthor: false
 
 <img src="https://raw.githubusercontent.com/cytomining/DeepProfiler/main/figures/logo/banner.png" alt="DeepProfiler logo" width="400">
 
-DeepProfiler uses deep neural networks to extract morphological features directly from raw microscopy images, bypassing traditional segmentation-and-measurement pipelines.
+`DeepProfiler` uses deep neural networks to extract morphological features directly from raw microscopy images, bypassing traditional segmentation-and-measurement pipelines.
 It is designed for high-throughput screens where deep learning representations outperform classical feature sets.
 
 **Key capabilities:**
@@ -15,7 +15,7 @@ It is designed for high-throughput screens where deep learning representations o
 - Train and apply convolutional neural networks for feature extraction
 - Support for EfficientNet, ResNet, and custom architectures
 - Crop and embed single cells from large microscopy images
-- Produce embeddings compatible with pycytominer and downstream profiling workflows
+- Produce embeddings compatible with `pycytominer` and downstream profiling workflows
 
 **[View on GitHub →](https://github.com/cytomining/DeepProfiler)**
 

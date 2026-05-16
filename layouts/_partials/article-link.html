@@ -77,5 +77,10 @@
         {{ .Description }}
       </div>
     {{ end }}
+    {{ with .Params.problem }}
+      <div class="py-1 text-sm text-neutral-500 dark:text-neutral-400">
+        <span class="font-semibold text-neutral-700 dark:text-neutral-300">Problem:</span> {{ . }}
+      </div>
+    {{ end }}
   </div>
 </article>
