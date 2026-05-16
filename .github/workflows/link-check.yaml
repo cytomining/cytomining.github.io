@@ -21,6 +21,9 @@ jobs:
             --no-progress
             --exclude-path node_modules
             --exclude "^https://forum\\.image\\.sc/"
+            --exclude "^https://www\\.broadinstitute\\.org/"
+            --exclude "^https://doi\\.org/10\\.1101/"
+            --exclude "^https://doi\\.org/10\\.64898/"
             'content/**/*.md'
             '*.md'
           fail: true
