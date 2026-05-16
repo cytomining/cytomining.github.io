@@ -5,7 +5,7 @@ showDate: false
 showAuthor: false
 ---
 
-copairs is a Python package for evaluating the quality of morphological profiles by measuring how well a perturbation's profile can be retrieved relative to controls.
+`copairs` is a Python package for evaluating the quality of morphological profiles by measuring how well a perturbation's profile can be retrieved relative to controls.
 It implements mean Average Precision (mAP) and related metrics widely used in the image-based profiling community.
 
 **Key capabilities:**

@@ -9,7 +9,7 @@ logoUrl: "https://raw.githubusercontent.com/cytomining/CytoTable/main/logo/just-
 <img class="logo-light" src="https://raw.githubusercontent.com/cytomining/CytoTable/main/logo/with-text-for-light-bg.png" alt="CytoTable logo" width="400">
 <img class="logo-dark" src="https://raw.githubusercontent.com/cytomining/CytoTable/main/logo/with-text-for-dark-bg.png" alt="CytoTable logo" width="400">
 
-CytoTable harmonizes output from different high-content image analysis tools — including CellProfiler, DeepProfiler, and IN Carta — into a single, analysis-ready format.
+`CytoTable` harmonizes output from different high-content image analysis tools — including CellProfiler, `DeepProfiler`, and IN Carta — into a single, analysis-ready format.
 It scales to large datasets using Apache Parquet and DuckDB under the hood.
 
 **Key capabilities:**
@@ -17,7 +17,7 @@ It scales to large datasets using Apache Parquet and DuckDB under the hood.
 - Convert CellProfiler SQLite, CSV, and other formats into Parquet
 - Harmonize schema differences across analysis tools
 - Scale to datasets with millions of single cells
-- Produce outputs compatible with pycytominer and AnnData workflows
+- Produce outputs compatible with `pycytominer` and AnnData workflows
 
 **[View documentation →](https://cytomining.github.io/CytoTable/)**
 

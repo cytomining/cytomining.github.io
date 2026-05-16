@@ -1,6 +1,7 @@
 ---
 title: "OME-arrow"
 description: "Image storage — stores microscopy images alongside metadata and derived data in a unified, queryable Apache Arrow format."
+problem: "Images and feature tables live in separate systems — linking a numeric outlier back to its source cell requires error-prone manual joins across formats."
 showDate: false
 showAuthor: false
 logoUrl: "https://raw.githubusercontent.com/WayScience/OME-arrow/main/docs/src/_static/ome-arrow-logo.png"
@@ -8,8 +9,8 @@ logoUrl: "https://raw.githubusercontent.com/WayScience/OME-arrow/main/docs/src/_
 
 <img src="https://raw.githubusercontent.com/WayScience/OME-arrow/main/docs/src/_static/ome-arrow-logo.png" alt="OME-arrow logo" width="400">
 
-OME-arrow brings Open Microscopy Environment (OME) specifications to Apache Arrow, enabling microscopy images to be stored directly in data tables alongside their metadata and derived features as multilayer structs.
-This makes bioimaging data fast to query, easy to share, and compatible with modern tensor-based ML workflows.
+**Problem:** Images and feature tables live in separate systems — linking a numeric outlier back to its source cell requires error-prone manual joins across formats.
+`OME-arrow` embeds images as first-class columns in Apache Arrow tables, so features, metadata, and pixel data travel together and can be queried or exported as tensors.
 
 **Key capabilities:**
 

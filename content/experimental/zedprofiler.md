@@ -1,12 +1,13 @@
 ---
 title: "zedprofiler"
 description: "3D feature extraction — extracts morphological features from volumetric microscopy images for CPU-efficient high-content profiling."
+problem: "Classical profiling tools only extract 2D features, leaving organoid and z-stack experiments without a CPU-efficient extractor."
 showDate: false
 showAuthor: false
 ---
 
-zedprofiler is a CPU-first toolkit for extracting morphological features from 3D volumetric microscopy images.
-It is designed for high-content and high-throughput workflows where classical segmentation-and-measurement pipelines need to scale to single-cell features in z-stacks.
+**Problem:** Classical profiling tools extract only 2D features, leaving organoid, cleared-tissue, and z-stack experiments without a CPU-efficient extractor.
+`zedprofiler` extracts morphological features directly from 3D volumetric images, including anisotropic voxel spacing correction — no GPU required.
 
 **Key capabilities:**
 

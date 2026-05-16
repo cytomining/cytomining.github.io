@@ -1,6 +1,7 @@
 ---
 title: "iceberg-bioimage"
 description: "Data cataloging — scans bioimaging stores and publishes image metadata to Cytomining-compatible Parquet warehouses via Apache Iceberg."
+problem: "Raw bioimaging archives have no standard catalog — finding, versioning, and joining images to downstream data requires bespoke scripts per lab."
 showDate: false
 showAuthor: false
 logoUrl: "https://raw.githubusercontent.com/WayScience/iceberg-bioimage/main/docs/src/_static/iceberg-bioimage-logo.png"
@@ -8,8 +9,8 @@ logoUrl: "https://raw.githubusercontent.com/WayScience/iceberg-bioimage/main/doc
 
 <img src="https://raw.githubusercontent.com/WayScience/iceberg-bioimage/main/docs/src/_static/iceberg-bioimage-logo.png" alt="iceberg-bioimage logo" width="400">
 
-iceberg-bioimage is a Python package that catalogs bioimaging data using Apache Iceberg.
-It scans image stores across formats, publishes structured metadata tables, and exports layouts compatible with the Cytomining profiling ecosystem — bridging raw image archives and downstream analysis pipelines.
+**Problem:** Raw bioimaging archives have no standard catalog — finding, versioning, and joining images to downstream data requires bespoke scripts per lab.
+`iceberg-bioimage` scans any image store into a versioned Apache Iceberg catalog that directly exports Cytomining-compatible Parquet warehouses.
 
 **Key capabilities:**
 

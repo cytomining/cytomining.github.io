@@ -9,7 +9,7 @@ logoUrl: "https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/jus
 <img class="logo-light" src="https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/with-text-for-light-bg.png" alt="pycytominer logo" width="400">
 <img class="logo-dark" src="https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/with-text-for-dark-bg.png" alt="pycytominer logo" width="400">
 
-pycytominer is the core Python package in the Cytomining ecosystem.
+`pycytominer` is the core Python package in the Cytomining ecosystem.
 It provides a clean, composable API for processing single-cell morphological profiles produced by tools like CellProfiler.
 
 **Key capabilities:**
