@@ -17,7 +17,7 @@ It scales to large datasets using Apache Parquet and DuckDB under the hood.
 - Convert CellProfiler SQLite, CSV, and other formats into Parquet
 - Harmonize schema differences across analysis tools
 - Scale to datasets with millions of single cells
-- Produce outputs compatible with `pycytominer` and AnnData workflows
+- Produce outputs compatible with `Pycytominer` and AnnData workflows
 
 **[View documentation →](https://cytomining.github.io/CytoTable/)**
 
@@ -31,7 +31,7 @@ It scales to large datasets using Apache Parquet and DuckDB under the hood.
     <a href="https://doi.org/10.1016/j.patter.2026.101514">Scalable data harmonization for single-cell image-based profiling with CytoTable</a>
   </p>
   <p style="font-size: 0.875rem; margin: 0.25rem 0 0; color: #374151;">
-    Bunten D, Tomkinson J, Serrano E, Lippincott MJ, Brewer KI, et al.
+    Bunten, D. et al. <em>Patterns</em> <strong>7</strong>, 101514 (2026).
   </p>
   <p style="font-size: 0.8rem; margin: 0.25rem 0 0; color: #6b7280;">
     doi: <a href="https://doi.org/10.1016/j.patter.2026.101514" style="color: #6b7280;">10.1016/j.patter.2026.101514</a>

@@ -6,8 +6,9 @@ showDate: false
 showAuthor: false
 ---
 
-**Problem:** Classical profiling tools extract only 2D features, leaving organoid, cleared-tissue, and z-stack experiments without a CPU-efficient extractor.
 `zedprofiler` extracts morphological features directly from 3D volumetric images, including anisotropic voxel spacing correction — no GPU required.
+
+**Problem:** Classical profiling tools extract only 2D features, leaving organoid, cleared-tissue, and z-stack experiments without a CPU-efficient extractor.
 
 **Key capabilities:**
 

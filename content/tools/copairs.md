@@ -27,7 +27,7 @@ It implements mean Average Precision (mAP) and related metrics widely used in th
     <a href="https://doi.org/10.1038/s41467-025-60306-2">A versatile information retrieval framework for evaluating profile strength and similarity</a>
   </p>
   <p style="font-size: 0.875rem; margin: 0.25rem 0 0; color: #374151;">
-    Kalinin AA, Arevalo J, Serrano E, Vulliard L, Tsang H, et al.
+    Kalinin, A.A. et al. <em>Nat. Commun.</em> <strong>16</strong>, 5181 (2025).
   </p>
   <p style="font-size: 0.8rem; margin: 0.25rem 0 0; color: #6b7280;">
     doi: <a href="https://doi.org/10.1038/s41467-025-60306-2" style="color: #6b7280;">10.1038/s41467-025-60306-2</a>

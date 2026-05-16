@@ -29,30 +29,30 @@ showAuthor: false
 
 ### Reviews
 
-- Serrano E, Peters J, Way GP et al. (2026) — Progress and new challenges in image-based
-  profiling — _Molecular Systems Biology_ —
-  [10.1038/s44320-026-00197-7](https://doi.org/10.1038/s44320-026-00197-7)
-- Caicedo JC, Cooper S, Singh S, Carpenter AE et al. (2017) — Data-analysis strategies for
-  image-based cell profiling — _Nature Methods_ 14(9):849–863 —
-  [10.1038/nmeth.4397](https://doi.org/10.1038/nmeth.4397)
+- Serrano, E. et al. Progress and new challenges in image-based profiling.
+  *Mol. Syst. Biol.* **22**, 624–658 (2026).
+  [doi:10.1038/s44320-026-00197-7](https://doi.org/10.1038/s44320-026-00197-7)
+- Caicedo, J.C. et al. Data-analysis strategies for image-based cell profiling.
+  *Nat. Methods* **14**, 849–863 (2017).
+  [doi:10.1038/nmeth.4397](https://doi.org/10.1038/nmeth.4397)
 
 ### Tools
 
-- Serrano E, Chandrasekaran SN, Bunten D, Way GP et al. (2025) — Reproducible image-based
-  profiling with Pycytominer — _Nature Methods_ 22:677–680 —
-  [10.1038/s41592-025-02611-8](https://doi.org/10.1038/s41592-025-02611-8)
-- Kalinin AA, Arevalo J, Serrano E, Way GP, Singh S et al. (2025) — A versatile information
-  retrieval framework for evaluating profile strength and similarity — _Nature Communications_ —
-  [10.1038/s41467-025-60306-2](https://doi.org/10.1038/s41467-025-60306-2)
-- Moshkov N, Bornholdt M, Caicedo JC et al. (2024) — Learning representations for image-based
-  profiling of perturbations — _Nature Communications_ —
-  [10.1038/s41467-024-45999-1](https://doi.org/10.1038/s41467-024-45999-1)
-- Bunten D, Tomkinson J, Serrano E, Way GP et al. (2026) — Scalable data harmonization for
-  single-cell image-based profiling with CytoTable — _Patterns_ 7(5):101514 —
-  [10.1016/j.patter.2026.101514](https://doi.org/10.1016/j.patter.2026.101514)
-- Serrano E, Li WS, Way GP (2026) — Single-cell hit calling in high-content imaging screens
-  with Buscar — _bioRxiv_ preprint —
-  [10.64898/2026.04.15.718737](https://doi.org/10.64898/2026.04.15.718737)
-- Serrano E, Tomkinson J, Bunten D, Way GP et al. (2025) — Stellar quality control for
-  single-cell image-based profiling with coSMicQC — _bioRxiv_ preprint —
-  [10.1101/2025.10.14.682427](https://doi.org/10.1101/2025.10.14.682427)
+- Serrano, E. et al. Reproducible image-based profiling with Pycytominer.
+  *Nat. Methods* **22**, 677–680 (2025).
+  [doi:10.1038/s41592-025-02611-8](https://doi.org/10.1038/s41592-025-02611-8)
+- Kalinin, A.A. et al. A versatile information retrieval framework for evaluating profile strength and similarity.
+  *Nat. Commun.* **16**, 5181 (2025).
+  [doi:10.1038/s41467-025-60306-2](https://doi.org/10.1038/s41467-025-60306-2)
+- Moshkov, N. et al. Learning representations for image-based profiling of perturbations.
+  *Nat. Commun.* **15**, 1594 (2024).
+  [doi:10.1038/s41467-024-45999-1](https://doi.org/10.1038/s41467-024-45999-1)
+- Bunten, D. et al. Scalable data harmonization for single-cell image-based profiling with CytoTable.
+  *Patterns* **7**, 101514 (2026).
+  [doi:10.1016/j.patter.2026.101514](https://doi.org/10.1016/j.patter.2026.101514)
+- Serrano, E., Li, W.S. & Way, G.P. Single-cell hit calling in high-content imaging screens with Buscar.
+  *bioRxiv* (2026).
+  [doi:10.64898/2026.04.15.718737](https://doi.org/10.64898/2026.04.15.718737)
+- Tomkinson, J. et al. Stellar quality control for single-cell image-based profiling with coSMicQC.
+  *bioRxiv* (2025).
+  [doi:10.1101/2025.10.14.682427](https://doi.org/10.1101/2025.10.14.682427)
