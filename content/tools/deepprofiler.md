@@ -15,7 +15,7 @@ It is designed for high-throughput screens where deep learning representations o
 - Train and apply convolutional neural networks for feature extraction
 - Support for EfficientNet, ResNet, and custom architectures
 - Crop and embed single cells from large microscopy images
-- Produce embeddings compatible with `pycytominer` and downstream profiling workflows
+- Produce embeddings compatible with `Pycytominer` and downstream profiling workflows
 
 **[View on GitHub →](https://github.com/cytomining/DeepProfiler)**
 
@@ -29,7 +29,7 @@ It is designed for high-throughput screens where deep learning representations o
     <a href="https://doi.org/10.1038/s41467-024-45999-1">Learning representations for image-based profiling of perturbations</a>
   </p>
   <p style="font-size: 0.875rem; margin: 0.25rem 0 0; color: #374151;">
-    Moshkov N, Bornholdt M, Benoit G, Smith K, et al.
+    Moshkov, N. et al. <em>Nat. Commun.</em> <strong>15</strong>, 1594 (2024).
   </p>
   <p style="font-size: 0.8rem; margin: 0.25rem 0 0; color: #6b7280;">
     doi: <a href="https://doi.org/10.1038/s41467-024-45999-1" style="color: #6b7280;">10.1038/s41467-024-45999-1</a>

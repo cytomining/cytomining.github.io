@@ -17,7 +17,7 @@ It catches common problems such as over-segmented nuclei, poorly segmented cells
 - Flag over-segmented, under-segmented, and poorly focused cells
 - Apply threshold-based or z-score-based QC criteria
 - Generate summary reports of QC outcomes
-- Integrate seamlessly with `CytoTable` and `pycytominer` workflows
+- Integrate seamlessly with `CytoTable` and `Pycytominer` workflows
 
 **[View documentation →](https://cytomining.github.io/coSMicQC/)**
 
@@ -31,7 +31,7 @@ It catches common problems such as over-segmented nuclei, poorly segmented cells
     <a href="https://doi.org/10.1101/2025.10.14.682427">Stellar quality control for single-cell image-based profiling with coSMicQC</a>
   </p>
   <p style="font-size: 0.875rem; margin: 0.25rem 0 0; color: #374151;">
-    Tomkinson J, Bunten D, Way GP
+    Tomkinson, J. et al. <em>bioRxiv</em> (2025).
   </p>
   <p style="font-size: 0.8rem; margin: 0.25rem 0 0; color: #6b7280;">
     doi: <a href="https://doi.org/10.1101/2025.10.14.682427" style="color: #6b7280;">10.1101/2025.10.14.682427</a>

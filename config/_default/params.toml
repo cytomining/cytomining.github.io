@@ -21,7 +21,7 @@ enableCodeCopy = false
   showDate = false
   showAuthor = false
   showReadingTime = false
-  showTableOfContents = true
+  showTableOfContents = false
   showRelatedContent = false
   showEdit = false
 

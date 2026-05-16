@@ -1,15 +1,15 @@
 ---
-title: "pycytominer"
+title: "Pycytominer"
 description: "Core processing pipeline — aggregates, normalizes, and feature-selects morphological profiles for downstream analysis."
 showDate: false
 showAuthor: false
 logoUrl: "https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/just-icon.png"
 ---
 
-<img class="logo-light" src="https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/with-text-for-light-bg.png" alt="pycytominer logo" width="400">
-<img class="logo-dark" src="https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/with-text-for-dark-bg.png" alt="pycytominer logo" width="400">
+<img class="logo-light" src="https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/with-text-for-light-bg.png" alt="Pycytominer logo" width="400">
+<img class="logo-dark" src="https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/with-text-for-dark-bg.png" alt="Pycytominer logo" width="400">
 
-`pycytominer` is the core Python package in the Cytomining ecosystem.
+`Pycytominer` is the core Python package in the Cytomining ecosystem.
 It provides a clean, composable API for processing single-cell morphological profiles produced by tools like CellProfiler.
 
 **Key capabilities:**
@@ -32,7 +32,7 @@ It provides a clean, composable API for processing single-cell morphological pro
     <a href="https://doi.org/10.1038/s41592-025-02611-8">Reproducible image-based profiling with Pycytominer</a>
   </p>
   <p style="font-size: 0.875rem; margin: 0.25rem 0 0; color: #374151;">
-    Serrano E, Chandrasekaran SN, Bunten D, Brewer KI, Tomkinson J, et al.
+    Serrano, E. et al. <em>Nat. Methods</em> <strong>22</strong>, 677–680 (2025).
   </p>
   <p style="font-size: 0.8rem; margin: 0.25rem 0 0; color: #6b7280;">
     doi: <a href="https://doi.org/10.1038/s41592-025-02611-8" style="color: #6b7280;">10.1038/s41592-025-02611-8</a>
