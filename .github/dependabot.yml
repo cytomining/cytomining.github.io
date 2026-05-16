@@ -1,0 +1,17 @@
+version: 2
+updates:
+  # Keep GitHub Actions versions current
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns:
+          - "*"
+
+  # Keep pre-commit hook revisions current
+  - package-ecosystem: pre-commit
+    directory: /
+    schedule:
+      interval: weekly
