@@ -1,6 +1,6 @@
 ---
 title: "buscar"
-description: "Hit calling — identifies biologically active perturbations from single-cell morphological profiles using distribution-level scoring."
+description: "Hit calling — identifies biologically active perturbations from single-cell morphology profiles using distribution-level scoring."
 problem: "Population-level hit calling averages away cell-to-cell variation, hiding heterogeneous responses and rare subpopulations."
 showDate: false
 showAuthor: false

@@ -1,6 +1,6 @@
 ---
-title: Pycytominer
-description: Core processing pipeline — aggregates, normalizes, and feature-selects morphological profiles for downstream analysis.
+title: "Pycytominer"
+description: "Core processing pipeline — aggregates, normalizes, and feature-selects morphology profiles for downstream analysis."
 showDate: false
 showAuthor: false
 logoUrl: https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/just-icon.png
@@ -10,7 +10,7 @@ logoUrl: https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/just
 <img class="logo-dark" src="https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/with-text-for-dark-bg.png" alt="Pycytominer logo" width="400">
 
 `Pycytominer` is the core Python package in the Cytomining ecosystem.
-It provides a clean, composable API for processing single-cell morphological profiles produced by tools like CellProfiler.
+It provides a clean, composable API for processing single-cell morphology profiles produced by tools like CellProfiler.
 
 **Key capabilities:**
 

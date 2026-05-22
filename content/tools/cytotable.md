@@ -10,7 +10,7 @@ logoUrl: https://raw.githubusercontent.com/cytomining/CytoTable/main/logo/just-i
 <img class="logo-dark" src="https://raw.githubusercontent.com/cytomining/CytoTable/main/logo/with-text-for-dark-bg.png" alt="CytoTable logo" width="400">
 
 `CytoTable` harmonizes output from different high-content image analysis tools — including CellProfiler, `DeepProfiler`, and IN Carta — into a single, analysis-ready format.
-It scales to large datasets using Apache Parquet and DuckDB under the hood.
+It scales to large datasets using Apache Parquet, DuckDB, and Parsl under the hood.
 
 **Key capabilities:**
 
