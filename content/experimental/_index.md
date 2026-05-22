@@ -1,6 +1,6 @@
 ---
 title: "Experimental"
-description: "Next-generation tools under active development in the WayScience organization."
+description: "Tools under active development in the WayScience organization, forming the foundation of the next Cytomining ecosystem."
 ---
 
-The following tools are under active development in the [WayScience](https://github.com/WayScience) organization and represent the next generation of the Cytomining ecosystem.
+The following tools are under active development in the [WayScience](https://github.com/WayScience) organization and form the backbone of the Cytomining roadmap.

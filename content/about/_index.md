@@ -27,6 +27,7 @@ In 2016, members of this community co-founded the [CytoData Society](https://www
 The following year, the team contributed the landmark [Caicedo et al. 2017](https://doi.org/10.1038/nmeth.4397) review in _Nature Methods_ that established the field's foundational analysis standards.
 
 Since 2021, the [Way Lab](https://www.waysciencelab.com/) has driven a major expansion of the ecosystem — migrating from R to Python with `Pycytominer` and building a modern infrastructure stack including `CytoTable` and `coSMicQC`.
+In 2026, members of the CytoData community published an updated review, [Serrano et al.](https://doi.org/10.1038/s44320-026-00197-7) in _Molecular Systems Biology_, surveying progress and new challenges in image-based profiling.
 Today, Cytomining tools are used by research groups worldwide for drug discovery, functional genomics, and cell biology.
 
 ## Community
