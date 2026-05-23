@@ -3,7 +3,7 @@ title: "CytoDataFrame"
 description: "Interactive exploration — view and inspect morphology profiles alongside their source cell images directly in Jupyter notebooks."
 showDate: false
 showAuthor: false
-logoUrl: "https://raw.githubusercontent.com/cytomining/CytoDataFrame/main/logo/just-icon.png"
+logoUrl: https://raw.githubusercontent.com/cytomining/CytoDataFrame/main/logo/just-icon.png
 ---
 
 <img class="logo-light" src="https://raw.githubusercontent.com/cytomining/CytoDataFrame/main/logo/with-text-for-light-bg.png" alt="CytoDataFrame logo" width="400">

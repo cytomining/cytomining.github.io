@@ -1,6 +1,6 @@
 ---
-title: "copairs"
-description: "Downstream evaluation — measures how reproducibly perturbation profiles retrieve their matched replicates, quantifying profile quality and similarity."
+title: copairs
+description: Downstream evaluation — measures how reproducibly perturbation profiles retrieve their matched replicates, quantifying profile quality and similarity.
 showDate: false
 showAuthor: false
 ---

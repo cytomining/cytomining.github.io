@@ -3,7 +3,7 @@ title: "Pycytominer"
 description: "Core processing pipeline — aggregates, normalizes, and feature-selects morphology profiles for downstream analysis."
 showDate: false
 showAuthor: false
-logoUrl: "https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/just-icon.png"
+logoUrl: https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/just-icon.png
 ---
 
 <img class="logo-light" src="https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/with-text-for-light-bg.png" alt="Pycytominer logo" width="400">

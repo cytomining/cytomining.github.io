@@ -1,6 +1,6 @@
 ---
-title: "Contact"
-description: "Get in touch with the Cytomining community."
+title: Contact
+description: Get in touch with the Cytomining community.
 ---
 
 - 💬 Join the conversation on our [Discourse forums](https://forum.image.sc/)

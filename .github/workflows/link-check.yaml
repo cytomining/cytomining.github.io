@@ -1,0 +1,28 @@
+name: Link check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check links with lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Check all Markdown files in content/ and the root-level docs
+          args: >-
+            --verbose
+            --no-progress
+            --exclude-path node_modules
+            --exclude "^https://forum\\.image\\.sc/"
+            --exclude "^https://www\\.broadinstitute\\.org/"
+            --exclude "^https://doi\\.org/"
+            'content/**/*.md'
+            '*.md'
+          fail: true
