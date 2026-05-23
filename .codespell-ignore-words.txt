@@ -8,3 +8,6 @@ patter
 # "mAP" (mean Average Precision) — scientific metric abbreviation used in copairs docs
 # codespell may flag the lowercase form "map" variant; list both cases to be safe
 mAP
+
+# "Commun" — abbreviation for "Communications" used in Nature citation style (e.g. Nat. Commun.)
+Commun
