@@ -18,8 +18,7 @@ repos:
     hooks:
       - id: codespell
         args:
-          # "patter" is the Cell Press journal identifier used in DOI URLs
-          - --ignore-words-list=patter
+          - --ignore-words=.codespell-ignore-words.txt
   # checking markdown formatting
   - repo: https://github.com/executablebooks/mdformat
     rev: 1.0.0

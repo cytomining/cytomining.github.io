@@ -1,0 +1,10 @@
+# Words codespell should not flag as misspellings.
+# Format: one word per line (case-insensitive).
+# Add a comment above each entry explaining why it is excluded.
+
+# "patter" appears in Cell Press journal DOI URLs (doi.org/10.1016/j.patter.*)
+patter
+
+# "mAP" (mean Average Precision) — scientific metric abbreviation used in copairs docs
+# codespell may flag the lowercase form "map" variant; list both cases to be safe
+mAP
