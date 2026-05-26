@@ -43,6 +43,7 @@ All contributors and community members are expected to uphold a respectful, incl
 
 We take security seriously across our software and community operations.
 
+- [Cytomining Organization Security Policy](https://github.com/cytomining/.github/blob/main/SECURITY.md)
 - If you discover a potential vulnerability, please report it responsibly through GitHub security reporting mechanisms where available
 - Avoid opening public issues for unpatched security vulnerabilities
 - We aim to triage and respond to credible reports quickly and transparently
