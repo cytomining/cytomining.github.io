@@ -4,7 +4,7 @@
   weight = 10
 
 [[main]]
-  name = "Experimental tools"
+  name = "Roadmap"
   pageRef = "experimental"
   weight = 20
 
