@@ -19,7 +19,7 @@ We welcome issues, bug reports, documentation improvements, and pull requests fr
 ## Governance
 
 Cytomining uses a lightweight governance model centered on maintainers and public decision-making.
-Inspired by [GitHub's Minimum Viable Governance example](https://github.com/github/MVG), we keep policy concise and bias toward transparent, repository-native workflows over heavy process.
+We keep policy concise and bias toward transparent, repository-native workflows over heavy process.
 
 - **Stewardship:** Repositories are maintained by designated maintainers in the `cytomining` organization.
 - **Decision-making:** Day-to-day technical decisions happen in public issues and pull requests.
