@@ -3,9 +3,12 @@ title: DeepProfiler
 description: Alternative feature extraction — deep learning embeddings from raw microscopy images, bypassing classical segmentation-and-measurement pipelines.
 showDate: false
 showAuthor: false
+githubRepo: cytomining/DeepProfiler
 ---
 
 <img src="https://raw.githubusercontent.com/cytomining/DeepProfiler/master/figures/logo/banner.png" alt="DeepProfiler logo" width="400">
+
+{{< tool-badges >}}
 
 `DeepProfiler` uses deep neural networks to extract morphological features directly from raw microscopy images, bypassing traditional segmentation-and-measurement pipelines.
 It is designed for high-throughput screens where deep learning representations outperform classical feature sets.

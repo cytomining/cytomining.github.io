@@ -3,7 +3,11 @@ title: copairs
 description: Downstream evaluation — measures how reproducibly perturbation profiles retrieve their matched replicates, quantifying profile quality and similarity.
 showDate: false
 showAuthor: false
+pypiPackage: copairs
+githubRepo: cytomining/copairs
 ---
+
+{{< tool-badges >}}
 
 `copairs` is a Python package for evaluating the quality of morphology profiles by measuring how well a perturbation's profile can be retrieved relative to controls.
 It implements mean Average Precision (mAP) and related metrics widely used in the image-based profiling community.

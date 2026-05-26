@@ -69,6 +69,7 @@
         {{ partial "extend-article-link.html" . }}
       {{ end }}
     </h3>
+    {{ partial "tool-badges.html" (dict "page" . "scope" "list") }}
     <div class="text-sm text-neutral-500 dark:text-neutral-400">
       {{ partial "article-meta.html" . }}
     </div>

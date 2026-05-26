@@ -5,10 +5,13 @@ problem: "Classical profiling tools only extract 2D features, leaving organoid a
 showDate: false
 showAuthor: false
 logoUrl: "https://raw.githubusercontent.com/WayScience/ZedProfiler/main/logo/logo.png"
+githubRepo: "WayScience/zedprofiler"
 ---
 
 <img class="logo-light" src="https://raw.githubusercontent.com/WayScience/ZedProfiler/main/logo/with-text-for-light-bg.png" alt="ZEDprofiler logo" width="400">
 <img class="logo-dark" src="https://raw.githubusercontent.com/WayScience/ZedProfiler/main/logo/with-text-for-dark-bg.png" alt="ZEDprofiler logo" width="400">
+
+{{< tool-badges >}}
 
 `ZEDprofiler` extracts morphological features directly from 3D volumetric images, including anisotropic voxel spacing correction — no GPU required.
 

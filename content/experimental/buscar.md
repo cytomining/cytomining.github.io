@@ -5,10 +5,13 @@ problem: "Population-level hit calling averages away cell-to-cell variation, hid
 showDate: false
 showAuthor: false
 logoUrl: "https://raw.githubusercontent.com/WayScience/buscar/main/logo/just-icon.png"
+githubRepo: "WayScience/buscar"
 ---
 
 <img class="logo-light" src="https://raw.githubusercontent.com/WayScience/buscar/main/logo/with-text-for-light-bg.png" alt="buscar logo" width="400">
 <img class="logo-dark" src="https://raw.githubusercontent.com/WayScience/buscar/main/logo/with-text-for-dark-bg.png" alt="buscar logo" width="400">
+
+{{< tool-badges >}}
 
 `buscar` scores perturbations directly on single-cell distributions using Earth Mover's Distance, preserving heterogeneity throughout hit calling.
 

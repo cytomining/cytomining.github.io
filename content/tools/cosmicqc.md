@@ -4,10 +4,14 @@ description: Quality control step — flags and removes low-quality cells before
 showDate: false
 showAuthor: false
 logoUrl: https://raw.githubusercontent.com/cytomining/coSMicQC/main/media/logo/just-icon.png
+pypiPackage: cosmicqc
+githubRepo: cytomining/coSMicQC
 ---
 
 <img class="logo-light" src="https://raw.githubusercontent.com/cytomining/coSMicQC/main/media/logo/with-text-for-light-bg.png" alt="coSMicQC logo" width="400">
 <img class="logo-dark" src="https://raw.githubusercontent.com/cytomining/coSMicQC/main/media/logo/with-text-for-dark-bg.png" alt="coSMicQC logo" width="400">
+
+{{< tool-badges >}}
 
 `coSMicQC` (Single-cell Morphology Quality Control) identifies and removes low-quality cells from image-based profiling datasets before downstream analysis.
 It catches common problems such as over-segmented nuclei, poorly segmented cells, and imaging artifacts.
