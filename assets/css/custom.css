@@ -14,6 +14,12 @@ html {
   font-size: 90%;
 }
 
+/* Header logo: make site mark compact in top nav */
+a.mr-2 > img {
+  max-height: 1.75rem !important;
+  max-width: 1.75rem !important;
+}
+
 /* Logo dark/light switching.
    Congo toggles a .dark class on <html> via JS — the native
    prefers-color-scheme media query inside <picture> tags does not respond
