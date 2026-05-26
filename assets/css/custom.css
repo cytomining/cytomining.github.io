@@ -137,3 +137,15 @@ html.dark .hero-pill-green   { background: #052e16 !important; border-color: #16
 html.dark .hero-btn-primary  { background: #3b82f6 !important; }
 html.dark .hero-btn-outline  { border-color: #374151 !important; color: #d1d5db !important; }
 html.dark .hero-secondary-link { color: #6b7280 !important; border-bottom-color: #374151 !important; }
+
+/* Header breakpoint override:
+   Use hamburger menu up to 900px (instead of Congo's default 640px). */
+@media (max-width: 900px) {
+  #menu-button {
+    display: block !important;
+  }
+
+  header nav > ul.hidden.sm\:flex {
+    display: none !important;
+  }
+}
