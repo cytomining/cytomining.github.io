@@ -10,7 +10,7 @@ The Cytomining ecosystem is maintained by a distributed community of contributor
 
 ## Contributors
 
-- Browse contributors and maintainers in the [cytomining GitHub organization](https://github.com/cytomining)
+- Browse contributors and maintainers in the [Cytomining GitHub organization](https://github.com/cytomining)
 - See organization members directly in the [People directory](https://github.com/orgs/cytomining/people)
 - Explore project-level contribution history in each repository's contributors graph
 
@@ -21,11 +21,11 @@ We welcome issues, bug reports, documentation improvements, and pull requests fr
 Cytomining uses a lightweight governance model centered on maintainers and public decision-making.
 We keep policy concise and bias toward transparent, repository-native workflows over heavy process.
 
-- **Stewardship:** Repositories are maintained by designated maintainers in the `cytomining` organization.
-- **Decision-making:** Day-to-day technical decisions happen in public issues and pull requests.
+- **Stewardship:** Repositories are maintained by designated maintainers in the `Cytomining` organization.
+- **Decision-making:** Day-to-day technical decisions happen in public issues, pull requests, and our public [Discord](https://discord.gg/dgEDz6xzfJ).
 - **Consensus first:** Maintainers seek rough consensus from active contributors before merging impactful changes.
 - **Escalation path:** When consensus is unclear, maintainers make a final call, document rationale, and revisit with new evidence.
-- **Scope and ownership:** Changes are reviewed by maintainers closest to the affected project area.
+- **Scope and ownership:** Changes are reviewed by maintainers closest to the affected project area, as defined by recent commits and other relevant ecosystem initiatives.
 - **Openness:** Design direction, roadmap changes, and tradeoffs are discussed in public whenever possible.
 - **Evolution:** Governance expectations are updated incrementally as the community and project complexity grow.
 
