@@ -4,10 +4,13 @@ description: "Image storage — stores microscopy images alongside metadata and 
 problem: "Images and feature tables live in separate systems — linking a numeric outlier back to its source cell requires error-prone manual joins across formats."
 showDate: false
 showAuthor: false
-logoUrl: "https://raw.githubusercontent.com/WayScience/OME-arrow/main/docs/src/_static/ome-arrow-logo.png"
+logoUrl: "https://raw.githubusercontent.com/wayscience/ome-arrow/main/docs/src/_static/ome-arrow-with-text.png?raw=true"
+githubRepo: "WayScience/OME-arrow"
 ---
 
-<img src="https://raw.githubusercontent.com/WayScience/OME-arrow/main/docs/src/_static/ome-arrow-logo.png" alt="OME-arrow logo" width="400">
+<img src="https://raw.githubusercontent.com/wayscience/ome-arrow/main/docs/src/_static/ome-arrow-with-text.png?raw=true" alt="OME-arrow logo" width="400">
+
+{{< tool-badges >}}
 
 `OME-arrow` embeds images as first-class columns in Apache Arrow tables, so features, metadata, and pixel data travel together and can be queried or exported as tensors.
 

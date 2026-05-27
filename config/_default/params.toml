@@ -9,7 +9,8 @@ enableCodeCopy = false
   showRecent = false
 
 [header]
-  layout = "fixed"
+  layout = "hybrid"
+  logo = "img/cytomining-logo.png"
 
 [footer]
   showCopyright = true

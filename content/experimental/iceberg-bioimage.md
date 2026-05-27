@@ -5,9 +5,12 @@ problem: "Raw bioimaging archives have no standard catalog — finding, versioni
 showDate: false
 showAuthor: false
 logoUrl: "https://raw.githubusercontent.com/WayScience/iceberg-bioimage/main/docs/src/_static/iceberg-bioimage-logo.png"
+githubRepo: "WayScience/iceberg-bioimage"
 ---
 
 <img src="https://raw.githubusercontent.com/WayScience/iceberg-bioimage/main/docs/src/_static/iceberg-bioimage-logo.png" alt="iceberg-bioimage logo" width="400">
+
+{{< tool-badges >}}
 
 `iceberg-bioimage` scans any image store into a versioned Apache Iceberg catalog that directly exports Cytomining-compatible Parquet warehouses.
 

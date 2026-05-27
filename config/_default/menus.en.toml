@@ -4,7 +4,7 @@
   weight = 10
 
 [[main]]
-  name = "Experimental tools"
+  name = "Roadmap"
   pageRef = "experimental"
   weight = 20
 
@@ -17,6 +17,11 @@
   name = "About"
   pageRef = "about"
   weight = 40
+
+[[main]]
+  name = "People"
+  pageRef = "people"
+  weight = 50
 
 
 [[main]]
