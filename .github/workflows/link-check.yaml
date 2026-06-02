@@ -24,6 +24,7 @@ jobs:
             --exclude "^https://www\\.broadinstitute\\.org/"
             --exclude "^https://www\\.eu-openscreen\\.eu/"
             --exclude "^https://doi\\.org/"
+            --exclude "^https://gohugo\\.io/installation/"
             'content/**/*.md'
             '*.md'
           fail: true
