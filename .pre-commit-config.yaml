@@ -27,7 +27,7 @@ repos:
         exclude: ^content/
         additional_dependencies:
           - mdformat-gfm==1.0.0
-          - mdformat-frontmatter==2.0.10
+          - mdformat-frontmatter==2.1.2
   # HTML linting — exclude Hugo template files (contain {{ }} syntax)
   - repo: https://github.com/Lucas-C/pre-commit-hooks-nodejs
     rev: v1.1.2
