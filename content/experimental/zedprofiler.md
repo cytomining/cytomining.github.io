@@ -8,10 +8,13 @@ logoUrl: "https://raw.githubusercontent.com/WayScience/ZedProfiler/main/logo/log
 githubRepo: "WayScience/zedprofiler"
 ---
 
+<a href="https://github.com/WayScience/ZedProfiler" target="_blank" rel="external">
 <img class="logo-light" src="https://raw.githubusercontent.com/WayScience/ZedProfiler/main/logo/with-text-for-light-bg.png" alt="ZEDprofiler logo" width="400">
 <img class="logo-dark" src="https://raw.githubusercontent.com/WayScience/ZedProfiler/main/logo/with-text-for-dark-bg.png" alt="ZEDprofiler logo" width="400">
+</a>
 
 {{< tool-badges >}}
+
 
 `ZEDprofiler` extracts morphological features directly from 3D volumetric images, including anisotropic voxel spacing correction — no GPU required.
 

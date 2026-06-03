@@ -11,20 +11,33 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          submodules: true
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: latest
+          extended: true
+
+      - name: Build site
+        run: hugo --minify
 
       - name: Check links with lychee
         uses: lycheeverse/lychee-action@v2
         with:
-          # Check all Markdown files in content/ and the root-level docs
+          # Check all Markdown files; --root-dir resolves root-relative links against built site
           args: >-
             --verbose
             --no-progress
+            --root-dir ./public
             --exclude-path node_modules
             --exclude "^https://forum\\.image\\.sc/"
             --exclude "^https://www\\.broadinstitute\\.org/"
             --exclude "^https://www\\.eu-openscreen\\.eu/"
             --exclude "^https://doi\\.org/"
             --exclude "^https://gohugo\\.io/installation/"
+            --exclude "^https://sbi2\\.org/"
             'content/**/*.md'
             '*.md'
           fail: true

@@ -8,10 +8,13 @@ pypiPackage: pycytominer
 githubRepo: cytomining/pycytominer
 ---
 
+<a href="https://github.com/cytomining/pycytominer" target="_blank" rel="external">
 <img class="logo-light" src="https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/with-text-for-light-bg.png" alt="Pycytominer logo" width="400">
 <img class="logo-dark" src="https://raw.githubusercontent.com/cytomining/pycytominer/main/logo/with-text-for-dark-bg.png" alt="Pycytominer logo" width="400">
+</a>
 
 {{< tool-badges >}}
+
 
 `Pycytominer` is the core Python package in the Cytomining ecosystem.
 It provides a clean, composable API for processing single-cell morphology profiles produced by tools like CellProfiler.
@@ -24,11 +27,11 @@ It provides a clean, composable API for processing single-cell morphology profil
 - Select high-quality features and remove noise
 - Output analysis-ready profiles in standard formats
 
-**[View documentation →](https://pycytominer.readthedocs.io/)**
+**[View documentation →](https://pycytominer.readthedocs.io/)** · **[View on GitHub →](https://github.com/cytomining/pycytominer)**
 
 ## Publication
 
-<div style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;">
+<div class="publication-card" style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;">
   <div style="margin-bottom: 0.5rem;">
     <span style="background: #2563eb; color: white; padding: 0.2rem 0.7rem; border-radius: 9999px; font-size: 0.78rem; font-weight: 600;">Nature Methods · 2025</span>
   </div>

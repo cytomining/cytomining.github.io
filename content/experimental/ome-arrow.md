@@ -8,9 +8,12 @@ logoUrl: "https://raw.githubusercontent.com/wayscience/ome-arrow/main/docs/src/_
 githubRepo: "WayScience/OME-arrow"
 ---
 
+<a href="https://github.com/WayScience/OME-arrow" target="_blank" rel="external">
 <img src="https://raw.githubusercontent.com/wayscience/ome-arrow/main/docs/src/_static/ome-arrow-with-text.png?raw=true" alt="OME-arrow logo" width="400">
+</a>
 
 {{< tool-badges >}}
+
 
 `OME-arrow` embeds images as first-class columns in Apache Arrow tables, so features, metadata, and pixel data travel together and can be queried or exported as tensors.
 

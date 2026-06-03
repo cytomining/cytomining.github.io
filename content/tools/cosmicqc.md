@@ -8,10 +8,13 @@ pypiPackage: cosmicqc
 githubRepo: cytomining/coSMicQC
 ---
 
+<a href="https://github.com/cytomining/coSMicQC" target="_blank" rel="external">
 <img class="logo-light" src="https://raw.githubusercontent.com/cytomining/coSMicQC/main/media/logo/with-text-for-light-bg.png" alt="coSMicQC logo" width="400">
 <img class="logo-dark" src="https://raw.githubusercontent.com/cytomining/coSMicQC/main/media/logo/with-text-for-dark-bg.png" alt="coSMicQC logo" width="400">
+</a>
 
 {{< tool-badges >}}
+
 
 `coSMicQC` (Single-cell Morphology Quality Control) identifies and removes low-quality cells from image-based profiling datasets before downstream analysis.
 It catches common problems such as over-segmented nuclei, poorly segmented cells, and imaging artifacts.
@@ -21,13 +24,13 @@ It catches common problems such as over-segmented nuclei, poorly segmented cells
 - Flag over-segmented, under-segmented, and poorly focused cells
 - Apply threshold-based or z-score-based QC criteria
 - Generate summary reports of QC outcomes
-- Integrate seamlessly with `CytoTable` and `Pycytominer` workflows
+- Integrate seamlessly with [`CytoTable`](/tools/cytotable/) and [`Pycytominer`](/tools/pycytominer/) workflows
 
-**[View documentation →](https://cytomining.github.io/coSMicQC/)**
+**[View documentation →](https://cytomining.github.io/coSMicQC/)** · **[View on GitHub →](https://github.com/cytomining/coSMicQC)**
 
 ## Publication
 
-<div style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;">
+<div class="publication-card" style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;">
   <div style="margin-bottom: 0.5rem;">
     <span style="background: #6b7280; color: white; padding: 0.2rem 0.7rem; border-radius: 9999px; font-size: 0.78rem; font-weight: 600;">bioRxiv Preprint · 2025</span>
   </div>

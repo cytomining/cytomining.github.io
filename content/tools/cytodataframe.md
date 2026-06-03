@@ -8,10 +8,13 @@ pypiPackage: cytodataframe
 githubRepo: cytomining/CytoDataFrame
 ---
 
+<a href="https://github.com/cytomining/CytoDataFrame" target="_blank" rel="external">
 <img class="logo-light" src="https://raw.githubusercontent.com/cytomining/CytoDataFrame/main/logo/with-text-for-light-bg.png" alt="CytoDataFrame logo" width="400">
 <img class="logo-dark" src="https://raw.githubusercontent.com/cytomining/CytoDataFrame/main/logo/with-text-for-dark-bg.png" alt="CytoDataFrame logo" width="400">
+</a>
 
 {{< tool-badges >}}
+
 
 `CytoDataFrame` extends the familiar pandas DataFrame interface to let researchers view and analyze single-cell morphology profiles alongside their corresponding microscopy images and segmentation masks — all within a Jupyter notebook.
 
@@ -22,4 +25,4 @@ githubRepo: cytomining/CytoDataFrame
 - Overlay segmentation masks for quality inspection
 - Built on top of pandas for full compatibility with existing workflows
 
-**[View documentation →](https://cytomining.github.io/CytoDataFrame/)**
+**[View documentation →](https://cytomining.github.io/CytoDataFrame/)** · **[View on GitHub →](https://github.com/cytomining/CytoDataFrame)**
