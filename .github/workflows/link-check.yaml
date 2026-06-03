@@ -20,6 +20,7 @@ jobs:
             --verbose
             --no-progress
             --exclude-path node_modules
+            --exclude "^/"
             --exclude "^https://forum\\.image\\.sc/"
             --exclude "^https://www\\.broadinstitute\\.org/"
             --exclude "^https://www\\.eu-openscreen\\.eu/"

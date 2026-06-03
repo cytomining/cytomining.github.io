@@ -29,4 +29,3 @@ githubRepo: "WayScience/zedprofiler"
 - CPU-optimized for high-throughput processing without GPU dependency
 
 **[View on GitHub →](https://github.com/WayScience/zedprofiler)**
-

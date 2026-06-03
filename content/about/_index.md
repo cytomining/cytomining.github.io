@@ -7,7 +7,7 @@ showAuthor: false
 
 Cytomining is an open-source software ecosystem for single-cell image-based profiling — the practice of measuring thousands of cell morphology features from microscopy images to understand how cells respond to genetic, chemical, or environmental perturbations.
 
-Core tools are maintained under the [cytomining GitHub organization](https://github.com/cytomining) by [contributors](https://github.com/orgs/cytomining/people) from the [Way Lab](https://www.waysciencelab.com/) at the University of Colorado Anschutz Medical Campus and beyond.
+Core tools are maintained under the [Cytomining GitHub organization](https://github.com/cytomining) by [contributors](https://github.com/orgs/cytomining/people) from the [Way Lab](https://www.waysciencelab.com/) at the University of Colorado Anschutz Medical Campus and beyond.
 Experimental and emerging tools are developed under the [WayScience GitHub organization](https://github.com/WayScience) before graduating into the core ecosystem.
 
 ## Impact
@@ -26,10 +26,10 @@ The ecosystem traces its roots to the [Imaging Platform](https://www.broadinstit
 In 2016, members of this community co-founded the [CytoData Society](https://www.cytodata.org/) to unite researchers across academia and industry around image-based profiling.
 The following year, the team contributed the landmark [Caicedo et al. 2017](https://doi.org/10.1038/nmeth.4397) review in _Nature Methods_ that established the field's foundational analysis standards.
 
-Since 2021, the [Way Lab](https://www.waysciencelab.com/) has driven a major expansion of the ecosystem — migrating from R to Python with [`Pycytominer`](/tools/pycytominer/) and building a modern infrastructure stack including [`CytoTable`](/tools/cytotable/) and [`coSMicQC`](/tools/cosmicqc/).
+Since 2021, the [Way Lab](https://www.waysciencelab.com/) has driven a major expansion of the ecosystem — migrating from R to Python with [`Pycytominer`](/tools/pycytominer/) and building a modern infrastructure stack including [`CytoTable`](/tools/cytotable/), [`coSMicQC`](/tools/cosmicqc/), and others.
 In 2026, members of the CytoData community published an updated review, [Serrano et al.](https://doi.org/10.1038/s44320-026-00197-7) in _Molecular Systems Biology_, surveying progress and new challenges in image-based profiling.
 Today, Cytomining tools are used by research groups worldwide for drug discovery, functional genomics, and cell biology.
 
-## Community
+## Communities
 
-We are proud members of the [CytoData](https://www.cytodata.org/) community and the [CytoData Society](https://www.cytodata.org/about/), which hosts an annual symposium bringing together researchers and developers working on image-based profiling.
+We are proud members of the [CytoData Society](https://www.cytodata.org/) and [The Society of Biomolecular Imaging and Informatics](https://sbi2.org/), which hosts an annual symposium bringing together researchers and developers working on image-based profiling.

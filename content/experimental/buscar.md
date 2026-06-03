@@ -29,4 +29,3 @@ githubRepo: "WayScience/buscar"
 - Integrates directly with [`Pycytominer`](/tools/pycytominer/), [`coSMicQC`](/tools/cosmicqc/), and [`CytoTable`](/tools/cytotable/) workflows
 
 **[View on GitHub →](https://github.com/WayScience/buscar)**
-

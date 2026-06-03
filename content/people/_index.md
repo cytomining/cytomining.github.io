@@ -33,26 +33,27 @@ This reflects how the organization operates today and is intentionally compact s
 
 ### Organizational structure
 
-The Cytomining ecosystem spans two GitHub organizations with distinct roles.
+The Cytomining ecosystem currently spans two GitHub organizations with distinct roles.
 
 The [**cytomining**](https://github.com/cytomining) organization hosts production-ready tools that have reached stable APIs, published documentation, test coverage, and community adoption.
 Tools here are maintained collaboratively by contributors from the [Way Lab](https://www.waysciencelab.com/) at the University of Colorado Anschutz and the broader image-based profiling community.
 
 The [**WayScience**](https://github.com/WayScience) organization serves as an incubator for next-generation tools under active development.
-It is the primary home for roadmap work: tools here are experimental, may have unstable APIs, and have not yet graduated into [`cytomining`](https://github.com/cytomining).
+It is the primary home for roadmap work: tools here are experimental, may have unstable APIs, and have not yet graduated into [`Cytomining`](https://github.com/cytomining).
 
 The two organizations are complementary.
-[`WayScience`](https://github.com/WayScience) is where new ideas are prototyped and validated; [`cytomining`](https://github.com/cytomining) is where they become community infrastructure.
-Core production tools ([`Pycytominer`](/tools/pycytominer/), [`CytoTable`](/tools/cytotable/), [`coSMicQC`](/tools/cosmicqc/), [`copairs`](/tools/copairs/), [`DeepProfiler`](/tools/deepprofiler/), [`CytoDataFrame`](/tools/cytodataframe/)) live in [`cytomining`](https://github.com/cytomining).
+[`WayScience`](https://github.com/WayScience) is where new ideas are prototyped and validated; [`Cytomining`](https://github.com/cytomining) is where they become community infrastructure.
+Core production tools ([`Pycytominer`](/tools/pycytominer/), [`CytoTable`](/tools/cytotable/), [`coSMicQC`](/tools/cosmicqc/), [`copairs`](/tools/copairs/), [`DeepProfiler`](/tools/deepprofiler/), [`CytoDataFrame`](/tools/cytodataframe/)) live in [`Cytomining`](https://github.com/cytomining).
 Roadmap tools ([`buscar`](/experimental/buscar/), [`OME-arrow`](/experimental/ome-arrow/), [`iceberg-bioimage`](/experimental/iceberg-bioimage/), [`ZEDprofiler`](/experimental/zedprofiler/)) live in [`WayScience`](https://github.com/WayScience) until they are ready to graduate.
 
 ### Graduation process
 
-A tool is considered ready to migrate from [`WayScience`](https://github.com/WayScience) into [`cytomining`](https://github.com/cytomining) when it meets the following criteria:
+A tool is considered ready to migrate from [`WayScience`](https://github.com/WayScience) (or any other repository from other organizations) into [`Cytomining`](https://github.com/cytomining) when it meets the following criteria:
 
+- **Within scope** — the tool must be purpose-built for scientists who perform image-based profiling.
 - **Stable API** — no breaking changes anticipated in the near term; a versioned release has been tagged
 - **Documentation** — a published documentation site covering installation, usage, and API reference
-- **Test coverage** — a CI-passing test suite with meaningful coverage of core functionality
+- **Test coverage** — a CI-passing test suite with meaningful coverage (>80%) of core functionality
 - **Publication or preprint** — a citable reference describing the tool's design and validation
 
 ## Code of Conduct
