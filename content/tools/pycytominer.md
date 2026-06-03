@@ -27,7 +27,7 @@ It provides a clean, composable API for processing single-cell morphology profil
 - Select high-quality features and remove noise
 - Output analysis-ready profiles in standard formats
 
-**[View documentation →](https://pycytominer.readthedocs.io/)**
+**[View documentation →](https://pycytominer.readthedocs.io/)** · **[View on GitHub →](https://github.com/cytomining/pycytominer)**
 
 ## Publication
 

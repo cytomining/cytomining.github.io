@@ -26,7 +26,7 @@ It catches common problems such as over-segmented nuclei, poorly segmented cells
 - Generate summary reports of QC outcomes
 - Integrate seamlessly with [`CytoTable`](/tools/cytotable/) and [`Pycytominer`](/tools/pycytominer/) workflows
 
-**[View documentation →](https://cytomining.github.io/coSMicQC/)**
+**[View documentation →](https://cytomining.github.io/coSMicQC/)** · **[View on GitHub →](https://github.com/cytomining/coSMicQC)**
 
 ## Publication
 

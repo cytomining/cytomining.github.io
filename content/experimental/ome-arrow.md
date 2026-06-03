@@ -27,4 +27,4 @@ githubRepo: "WayScience/OME-arrow"
 - Tensor-focused output compatible with PyTorch, JAX, and DLPack
 - Visualization integrations for matplotlib, PyVista, and Napari
 
-**[View documentation →](https://wayscience.github.io/ome-arrow/)**
+**[View documentation →](https://wayscience.github.io/ome-arrow/)** · **[View on GitHub →](https://github.com/WayScience/OME-arrow)**

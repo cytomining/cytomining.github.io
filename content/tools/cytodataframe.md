@@ -25,4 +25,4 @@ githubRepo: cytomining/CytoDataFrame
 - Overlay segmentation masks for quality inspection
 - Built on top of pandas for full compatibility with existing workflows
 
-**[View documentation →](https://cytomining.github.io/CytoDataFrame/)**
+**[View documentation →](https://cytomining.github.io/CytoDataFrame/)** · **[View on GitHub →](https://github.com/cytomining/CytoDataFrame)**

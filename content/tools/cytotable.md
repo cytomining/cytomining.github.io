@@ -26,7 +26,7 @@ It scales to large datasets using Apache Parquet, DuckDB, and Parsl under the ho
 - Scale to datasets with millions of single cells
 - Produce outputs compatible with [`Pycytominer`](/tools/pycytominer/) and AnnData workflows
 
-**[View documentation →](https://cytomining.github.io/CytoTable/)**
+**[View documentation →](https://cytomining.github.io/CytoTable/)** · **[View on GitHub →](https://github.com/cytomining/CytoTable)**
 
 ## Publication
 

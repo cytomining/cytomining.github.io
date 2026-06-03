@@ -27,4 +27,4 @@ githubRepo: "WayScience/iceberg-bioimage"
 - Validate profile tables against microscopy join contracts
 - Supports Zarr, OME-TIFF, and Parquet source formats
 
-**[View documentation →](https://wayscience.github.io/iceberg-bioimage/)**
+**[View documentation →](https://wayscience.github.io/iceberg-bioimage/)** · **[View on GitHub →](https://github.com/WayScience/iceberg-bioimage)**

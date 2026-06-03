@@ -20,7 +20,7 @@ It implements mean Average Precision (mAP) and related metrics widely used in th
 - Evaluate intra- vs. inter-group morphological similarity
 - Scale efficiently to large screening datasets
 
-**[View documentation →](https://cytomining.github.io/copairs/)**
+**[View documentation →](https://cytomining.github.io/copairs/)** · **[View on GitHub →](https://github.com/cytomining/copairs)**
 
 ## Publication
 
