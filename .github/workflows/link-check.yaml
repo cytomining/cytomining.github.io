@@ -19,13 +19,14 @@ jobs:
           args: >-
             --verbose
             --no-progress
+            --scheme https
             --exclude-path node_modules
-            --exclude "^/"
             --exclude "^https://forum\\.image\\.sc/"
             --exclude "^https://www\\.broadinstitute\\.org/"
             --exclude "^https://www\\.eu-openscreen\\.eu/"
             --exclude "^https://doi\\.org/"
             --exclude "^https://gohugo\\.io/installation/"
+            --exclude "^https://sbi2\\.org/"
             'content/**/*.md'
             '*.md'
           fail: true
