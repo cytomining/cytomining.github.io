@@ -8,21 +8,33 @@
 {{- $isExperimental := eq $page.Section "experimental" -}}
 {{- if and (or $isTools $isExperimental) (or $page.Params.pypiPackage $page.Params.githubRepo) -}}
   <div class="tool-badges" style="display: flex; flex-wrap: nowrap; align-items: center; gap: 3px; font-size: 0; line-height: 0;">
-    {{- if $isTools -}}
+    {{- if and $isTools (ne $scope "list") -}}
       {{- with $page.Params.pypiPackage -}}
-        <img src="https://img.shields.io/pypi/v/{{ . }}" alt="PyPI version for {{ . }}" loading="lazy" />
+        <a href="https://pypi.org/project/{{ . }}/" target="_blank" rel="external" style="line-height:0;">
+          <img src="https://img.shields.io/pypi/v/{{ . }}" alt="PyPI version for {{ . }}" loading="lazy" />
+        </a>
       {{- end -}}
     {{- end -}}
-    {{- with $page.Params.githubRepo -}}
-      <img src="https://img.shields.io/github/stars/{{ . }}" alt="GitHub stars for {{ . }}" loading="lazy" />
+    {{- if ne $scope "list" -}}
+      {{- with $page.Params.githubRepo -}}
+        <a href="https://github.com/{{ . }}/stargazers" target="_blank" rel="external" style="line-height:0;">
+          <img src="https://img.shields.io/github/stars/{{ . }}" alt="GitHub stars for {{ . }}" loading="lazy" />
+        </a>
+      {{- end -}}
     {{- end -}}
     {{- if and $isTools (ne $scope "list") -}}
       {{- with $page.Params.pypiPackage -}}
-        <img src="https://img.shields.io/pypi/dm/{{ . }}?label=PyPI%20downloads" alt="PyPI monthly downloads for {{ . }}" loading="lazy" />
-        <img src="https://img.shields.io/pepy/dt/{{ . }}?label=total%20downloads" alt="Total downloads for {{ . }}" loading="lazy" />
+        <a href="https://pypistats.org/packages/{{ . }}" target="_blank" rel="external" style="line-height:0;">
+          <img src="https://img.shields.io/pypi/dm/{{ . }}?label=PyPI%20downloads" alt="PyPI monthly downloads for {{ . }}" loading="lazy" />
+        </a>
+        <a href="https://pypistats.org/packages/{{ . }}" target="_blank" rel="external" style="line-height:0;">
+          <img src="https://img.shields.io/pepy/dt/{{ . }}?label=total%20downloads" alt="Total downloads for {{ . }}" loading="lazy" />
+        </a>
       {{- end -}}
       {{- with $page.Params.githubRepo -}}
-        <img src="https://img.shields.io/github/forks/{{ . }}" alt="GitHub forks for {{ . }}" loading="lazy" />
+        <a href="https://github.com/{{ . }}/network/members" target="_blank" rel="external" style="line-height:0;">
+          <img src="https://img.shields.io/github/forks/{{ . }}" alt="GitHub forks for {{ . }}" loading="lazy" />
+        </a>
       {{- end -}}
     {{- end -}}
   </div>

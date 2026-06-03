@@ -138,6 +138,39 @@ html.dark .hero-btn-primary  { background: #3b82f6 !important; }
 html.dark .hero-btn-outline  { border-color: #374151 !important; color: #d1d5db !important; }
 html.dark .hero-secondary-link { color: #6b7280 !important; border-bottom-color: #374151 !important; }
 
+/* Inline code: remove Congo's visible backtick pseudo-elements, style like standard markdown */
+.prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::before,
+.prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::after {
+  content: "" !important;
+}
+.prose :where(code):not(:where(pre *, [class~="not-prose"], [class~="not-prose"] *)) {
+  background: #f3f4f6;
+  color: #374151;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 0.875em;
+}
+html.dark .prose :where(code):not(:where(pre *, [class~="not-prose"], [class~="not-prose"] *)) {
+  background: #374151;
+  color: #e5e7eb;
+}
+
+/* Publication card dark mode */
+html.dark .publication-card {
+  background: #1f2937 !important;
+  border-color: #374151 !important;
+}
+html.dark .publication-card p[style*="color: #374151"] {
+  color: #e5e7eb !important;
+}
+html.dark .publication-card p[style*="color: #6b7280"] {
+  color: #9ca3af !important;
+}
+html.dark .publication-card a {
+  color: #93c5fd !important;
+}
+
 /* Header breakpoint override:
    Use hamburger menu up to 900px (instead of Congo's default 640px). */
 @media (max-width: 900px) {

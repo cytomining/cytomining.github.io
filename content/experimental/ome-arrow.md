@@ -8,9 +8,12 @@ logoUrl: "https://raw.githubusercontent.com/wayscience/ome-arrow/main/docs/src/_
 githubRepo: "WayScience/OME-arrow"
 ---
 
+<a href="https://github.com/WayScience/OME-arrow" target="_blank" rel="external">
 <img src="https://raw.githubusercontent.com/wayscience/ome-arrow/main/docs/src/_static/ome-arrow-with-text.png?raw=true" alt="OME-arrow logo" width="400">
+</a>
 
 {{< tool-badges >}}
+
 
 `OME-arrow` embeds images as first-class columns in Apache Arrow tables, so features, metadata, and pixel data travel together and can be queried or exported as tensors.
 
@@ -24,4 +27,4 @@ githubRepo: "WayScience/OME-arrow"
 - Tensor-focused output compatible with PyTorch, JAX, and DLPack
 - Visualization integrations for matplotlib, PyVista, and Napari
 
-**[View documentation →](https://wayscience.github.io/ome-arrow/)** · **[View on GitHub →](https://github.com/WayScience/OME-arrow)**
+**[View documentation →](https://wayscience.github.io/ome-arrow/)**

@@ -8,12 +8,15 @@ pypiPackage: cytotable
 githubRepo: cytomining/CytoTable
 ---
 
+<a href="https://github.com/cytomining/CytoTable" target="_blank" rel="external">
 <img class="logo-light" src="https://raw.githubusercontent.com/cytomining/CytoTable/main/logo/with-text-for-light-bg.png" alt="CytoTable logo" width="400">
 <img class="logo-dark" src="https://raw.githubusercontent.com/cytomining/CytoTable/main/logo/with-text-for-dark-bg.png" alt="CytoTable logo" width="400">
+</a>
 
 {{< tool-badges >}}
 
-`CytoTable` harmonizes output from different high-content image analysis tools — including CellProfiler, `DeepProfiler`, and IN Carta — into a single, analysis-ready format.
+
+`CytoTable` harmonizes output from different high-content image analysis tools — including CellProfiler, [`DeepProfiler`](/tools/deepprofiler/), and IN Carta — into a single, analysis-ready format.
 It scales to large datasets using Apache Parquet, DuckDB, and Parsl under the hood.
 
 **Key capabilities:**
@@ -21,13 +24,13 @@ It scales to large datasets using Apache Parquet, DuckDB, and Parsl under the ho
 - Convert CellProfiler SQLite, CSV, and other formats into Parquet
 - Harmonize schema differences across analysis tools
 - Scale to datasets with millions of single cells
-- Produce outputs compatible with `Pycytominer` and AnnData workflows
+- Produce outputs compatible with [`Pycytominer`](/tools/pycytominer/) and AnnData workflows
 
 **[View documentation →](https://cytomining.github.io/CytoTable/)**
 
 ## Publication
 
-<div style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;">
+<div class="publication-card" style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;">
   <div style="margin-bottom: 0.5rem;">
     <span style="background: #7c3aed; color: white; padding: 0.2rem 0.7rem; border-radius: 9999px; font-size: 0.78rem; font-weight: 600;">Patterns (Cell Press) · 2026</span>
   </div>

@@ -31,42 +31,63 @@
     </div>
   {{- end }}
   <div>
-    <h3 class="flex items-center text-xl font-semibold">
-      {{/* Inline icon before title */}}
-      {{ with .Params.logoUrl }}
-        <img src="{{ . }}" alt="{{ $.Title }} icon" style="height: 22px; width: 22px; object-fit: contain; border-radius: 3px; margin-right: 0.5rem; flex-shrink: 0; position: relative; top: -1px;">
-      {{ end }}
-      {{ with .Params.externalUrl }}
-        <div>
+    <h3 class="flex items-center justify-between text-xl font-semibold" style="width: 100%;">
+      {{/* Left side: icon + title */}}
+      <span class="flex items-center">
+        {{ with .Params.logoUrl }}
+          {{ with $.Params.githubRepo }}
+            <a href="https://github.com/{{ . }}" target="_blank" rel="external" aria-label="View {{ $.Title }} on GitHub" style="line-height: 0; flex-shrink: 0; margin-right: 0.5rem;">
+              <img src="{{ $.Params.logoUrl }}" alt="{{ $.Title }} icon" style="height: 22px; width: 22px; object-fit: contain; border-radius: 3px; position: relative; top: -1px;">
+            </a>
+          {{ else }}
+            <img src="{{ . }}" alt="{{ $.Title }} icon" style="height: 22px; width: 22px; object-fit: contain; border-radius: 3px; margin-right: 0.5rem; flex-shrink: 0; position: relative; top: -1px;">
+          {{ end }}
+        {{ end }}
+        {{ with .Params.externalUrl }}
+          <div>
+            <a
+              class="text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+              href="{{ . }}"
+              target="_blank"
+              rel="external"
+              >{{ $.Title | emojify }}</a
+            >
+            <span
+              class="cursor-default align-top text-xs text-neutral-400 dark:text-neutral-500"
+              title="{{ i18n "list.externalurl_title" }}"
+            >
+              <span class="rtl:hidden">&#8599;</span>
+              <span class="ltr:hidden">&#8598;</span>
+            </span>
+          </div>
+        {{ else }}
           <a
             class="text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-            href="{{ . }}"
-            target="_blank"
-            rel="external"
-            >{{ $.Title | emojify }}</a
+            href="{{ .Permalink }}"
+            >{{ .Title | emojify }}</a
           >
-          <span
-            class="cursor-default align-top text-xs text-neutral-400 dark:text-neutral-500"
-            title="{{ i18n "list.externalurl_title" }}"
-          >
-            <span class="rtl:hidden">&#8599;</span>
-            <span class="ltr:hidden">&#8598;</span>
-          </span>
-        </div>
-      {{ else }}
-        <a
-          class="text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="{{ .Permalink }}"
-          >{{ .Title | emojify }}</a
-        >
-      {{ end }}
-      {{ if and .Draft .Site.Params.article.showDraftLabel }}
-        <div class="ms-2">
-          {{ partial "badge.html" (i18n "article.draft" | emojify) }}
-        </div>
-      {{ end }}
-      {{ if templates.Exists "_partials/extend-article-link.html" }}
-        {{ partial "extend-article-link.html" . }}
+        {{ end }}
+        {{ if and .Draft .Site.Params.article.showDraftLabel }}
+          <div class="ms-2">
+            {{ partial "badge.html" (i18n "article.draft" | emojify) }}
+          </div>
+        {{ end }}
+        {{ if templates.Exists "_partials/extend-article-link.html" }}
+          {{ partial "extend-article-link.html" . }}
+        {{ end }}
+      </span>
+      {{/* Right side: PyPI version + stars badge */}}
+      {{ if or .Params.pypiPackage .Params.githubRepo }}
+        <span style="flex-shrink: 0; margin-left: 0.75rem; display: inline-flex; align-items: center; gap: 0.35rem; line-height: 0;">
+          {{ with .Params.pypiPackage }}
+            <img src="https://img.shields.io/pypi/v/{{ . }}" alt="PyPI version for {{ . }}" loading="lazy" style="display: inline-block; vertical-align: middle;">
+          {{ end }}
+          {{ with .Params.githubRepo }}
+            <a href="https://github.com/{{ . }}/stargazers" target="_blank" rel="external" style="line-height: 0;">
+              <img src="https://img.shields.io/github/stars/{{ . }}" alt="GitHub stars for {{ . }}" loading="lazy" style="display: inline-block; vertical-align: middle;">
+            </a>
+          {{ end }}
+        </span>
       {{ end }}
     </h3>
     {{ partial "tool-badges.html" (dict "page" . "scope" "list") }}

@@ -8,9 +8,12 @@ logoUrl: "https://raw.githubusercontent.com/WayScience/iceberg-bioimage/main/doc
 githubRepo: "WayScience/iceberg-bioimage"
 ---
 
+<a href="https://github.com/WayScience/iceberg-bioimage" target="_blank" rel="external">
 <img src="https://raw.githubusercontent.com/WayScience/iceberg-bioimage/main/docs/src/_static/iceberg-bioimage-logo.png" alt="iceberg-bioimage logo" width="400">
+</a>
 
 {{< tool-badges >}}
+
 
 `iceberg-bioimage` scans any image store into a versioned Apache Iceberg catalog that directly exports Cytomining-compatible Parquet warehouses.
 
@@ -24,4 +27,4 @@ githubRepo: "WayScience/iceberg-bioimage"
 - Validate profile tables against microscopy join contracts
 - Supports Zarr, OME-TIFF, and Parquet source formats
 
-**[View documentation →](https://wayscience.github.io/iceberg-bioimage/)** · **[View on GitHub →](https://github.com/WayScience/iceberg-bioimage)**
+**[View documentation →](https://wayscience.github.io/iceberg-bioimage/)**

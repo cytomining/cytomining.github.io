@@ -9,6 +9,7 @@ githubRepo: cytomining/copairs
 
 {{< tool-badges >}}
 
+
 `copairs` is a Python package for evaluating the quality of morphology profiles by measuring how well a perturbation's profile can be retrieved relative to controls.
 It implements mean Average Precision (mAP) and related metrics widely used in the image-based profiling community.
 
@@ -23,7 +24,7 @@ It implements mean Average Precision (mAP) and related metrics widely used in th
 
 ## Publication
 
-<div style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;">
+<div class="publication-card" style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;">
   <div style="margin-bottom: 0.5rem;">
     <span style="background: #2563eb; color: white; padding: 0.2rem 0.7rem; border-radius: 9999px; font-size: 0.78rem; font-weight: 600;">Nature Communications · 2025</span>
   </div>

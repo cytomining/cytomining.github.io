@@ -6,9 +6,12 @@ showAuthor: false
 githubRepo: cytomining/DeepProfiler
 ---
 
+<a href="https://github.com/cytomining/DeepProfiler" target="_blank" rel="external">
 <img src="https://raw.githubusercontent.com/cytomining/DeepProfiler/master/figures/logo/banner.png" alt="DeepProfiler logo" width="400">
+</a>
 
 {{< tool-badges >}}
+
 
 `DeepProfiler` uses deep neural networks to extract morphological features directly from raw microscopy images, bypassing traditional segmentation-and-measurement pipelines.
 It is designed for high-throughput screens where deep learning representations outperform classical feature sets.
@@ -18,13 +21,13 @@ It is designed for high-throughput screens where deep learning representations o
 - Train and apply convolutional neural networks for feature extraction
 - Support for EfficientNet, ResNet, and custom architectures
 - Crop and embed single cells from large microscopy images
-- Produce embeddings compatible with `Pycytominer` and downstream profiling workflows
+- Produce embeddings compatible with [`Pycytominer`](/tools/pycytominer/) and downstream profiling workflows
 
 **[View on GitHub →](https://github.com/cytomining/DeepProfiler)**
 
 ## Publication
 
-<div style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;">
+<div class="publication-card" style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;">
   <div style="margin-bottom: 0.5rem;">
     <span style="background: #2563eb; color: white; padding: 0.2rem 0.7rem; border-radius: 9999px; font-size: 0.78rem; font-weight: 600;">Nature Communications · 2024</span>
   </div>
