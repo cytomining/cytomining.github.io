@@ -4,6 +4,8 @@ description: Alternative feature extraction — deep learning embeddings from ra
 showDate: false
 showAuthor: false
 githubRepo: cytomining/DeepProfiler
+pypiPackage: deepprofiler
+logoUrl: https://raw.githubusercontent.com/cytomining/DeepProfiler/master/figures/logo/logo.png
 ---
 
 <a href="https://github.com/cytomining/DeepProfiler" target="_blank" rel="external">
