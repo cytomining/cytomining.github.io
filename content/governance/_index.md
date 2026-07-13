@@ -1,9 +1,12 @@
 ---
-title: People
-description: Contributors, governance, code of conduct, and security stance for the Cytomining community.
+title: Governance
+description: Contributors, project graduation, code of conduct, and security stance for the Cytomining community.
 showDate: false
 showAuthor: false
 layout: simple
+url: /governance/
+aliases:
+  - /people/
 ---
 
 The Cytomining ecosystem is maintained by a distributed community of contributors across academia and industry.
@@ -47,6 +50,9 @@ Core production tools ([`Pycytominer`](/tools/pycytominer/), [`CytoTable`](/tool
 Roadmap tools ([`buscar`](/experimental/buscar/), [`OME-arrow`](/experimental/ome-arrow/), [`iceberg-bioimage`](/experimental/iceberg-bioimage/), [`ZEDprofiler`](/experimental/zedprofiler/)) live in [`WayScience`](https://github.com/WayScience) until they are ready to graduate.
 
 ### Graduation process
+
+Projects typically begin in the [`WayScience`](https://github.com/WayScience) organization (or other organizations) while APIs, scope, and maintenance practices are evolving.
+Once a project demonstrates stable releases, documentation, testing, active maintenance, and value to the broader Cytomining community, maintainers may propose transferring it to the [`Cytomining`](https://github.com/cytomining) organization through maintainer consensus.
 
 A tool is considered ready to migrate from [`WayScience`](https://github.com/WayScience) (or any other repository from other organizations) into [`Cytomining`](https://github.com/cytomining) when it meets the following criteria:
 

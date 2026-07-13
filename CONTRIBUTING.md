@@ -19,6 +19,13 @@ Open a [GitHub issue](https://github.com/cytomining/cytomining.github.io/issues)
 
 Please keep pull requests focused on a single change. All status checks must pass before merge.
 
+## Project migration
+
+Projects typically begin in the [WayScience](https://github.com/WayScience) organization (or other organizations) while APIs, scope, and maintenance practices are evolving.
+Once a project demonstrates stable releases, documentation, testing, active maintenance, and value to the broader Cytomining community, maintainers may propose transferring it to the [Cytomining](https://github.com/cytomining) organization through maintainer consensus.
+
+See the [graduation process](content/governance/_index.md#graduation-process) for the current migration criteria.
+
 ## Content guidelines
 
 - Keep tool descriptions factual and concise.
