@@ -52,7 +52,7 @@ Roadmap tools ([`buscar`](/experimental/buscar/), [`OME-arrow`](/experimental/om
 ### Graduation process
 
 Projects typically begin in the [`WayScience`](https://github.com/WayScience) organization (or other organizations) while APIs, scope, and maintenance practices are evolving.
-Once a project demonstrates stable releases, documentation, testing, active maintenance, and value to the broader cytomining community, maintainers may propose transferring it to the [`Cytomining`](https://github.com/cytomining) organization through maintainer consensus.
+Once a project demonstrates stable releases, documentation, testing, active maintenance, and value to the broader Cytomining community, maintainers may propose transferring it to the [`Cytomining`](https://github.com/cytomining) organization through maintainer consensus.
 
 A tool is considered ready to migrate from [`WayScience`](https://github.com/WayScience) (or any other repository from other organizations) into [`Cytomining`](https://github.com/cytomining) when it meets the following criteria:
 
