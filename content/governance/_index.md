@@ -1,9 +1,12 @@
 ---
-title: People
-description: Contributors, governance, code of conduct, and security stance for the Cytomining community.
+title: Governance
+description: Contributors, project graduation, code of conduct, and security stance for the Cytomining community.
 showDate: false
 showAuthor: false
 layout: simple
+url: /governance/
+aliases:
+  - /people/
 ---
 
 The Cytomining ecosystem is maintained by a distributed community of contributors across academia and industry.

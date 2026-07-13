@@ -19,8 +19,8 @@
   weight = 40
 
 [[main]]
-  name = "People"
-  pageRef = "people"
+  name = "Governance"
+  pageRef = "governance"
   weight = 50
 
 
