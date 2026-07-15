@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <div class="mx-auto max-w-prose py-8">
+    <header>
+      {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default false) }}
+        {{ partial "breadcrumbs.html" . }}
+      {{ end }}
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+    </header>
+    <section class="prose mt-0 max-w-full dark:prose-invert">
+      {{ .Content | emojify }}
+    </section>
+  </div>
+{{ end }}

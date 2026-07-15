@@ -48,6 +48,12 @@ html.dark .v2-callout {
 }
 html.dark .v2-callout p { color: #93c5fd !important; }
 html.dark .v2-callout strong { color: #bfdbfe !important; }
+html.dark .roadmap-link-callout {
+  background: #052e16 !important;
+  border-color: #22c55e !important;
+}
+html.dark .roadmap-link-callout p { color: #86efac !important; }
+html.dark .roadmap-link-callout a { color: #bbf7d0 !important; }
 html.dark .problem-card {
   background: #1f2937 !important;
   border-color: #374151 !important;
@@ -160,6 +166,36 @@ html.dark .hero-secondary-link { color: #6b7280 !important; border-bottom-color:
 
 html.dark .roadmap-doc strong {
   color: #f3f4f6;
+}
+
+.roadmap-figure {
+  margin: 2rem auto 2.25rem;
+  max-width: min(900px, 100%);
+  width: 100%;
+}
+
+.roadmap-figure img {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.roadmap-figure figcaption {
+  color: #6b7280;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  margin-top: 0.65rem;
+  text-align: left;
+}
+
+html.dark .roadmap-figure img {
+  border-color: #374151;
+}
+
+html.dark .roadmap-figure figcaption {
+  color: #9ca3af;
 }
 
 /* Inline code: remove Congo's visible backtick pseudo-elements, style like standard markdown */

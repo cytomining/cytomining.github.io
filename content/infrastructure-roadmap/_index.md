@@ -7,13 +7,18 @@ showAuthor: false
 
 <div class="roadmap-doc">
 
-This roadmap defines the next phase of Cytomining infrastructure work. It is organized for two audiences: reviewers who need to understand the purpose and expected outcomes, and developers who need a clear implementation map.
+This roadmap defines the next phase of Cytomining infrastructure work: unified multimodal data, efficient single-cell scale processing, and AI-ready image-based profiling.
 
 The work focuses on three connected components:
 
 1. Unified multimodal data infrastructure through OME-Arrow.
 2. Single-cell scale efficiency through Polars, benchmarking, and iceberg-bioimage.
 3. AI-ready image-based profiling through agent-readable APIs, ecosystem skills, and human-in-the-loop checkpoints.
+
+<figure class="roadmap-figure">
+  <img src="/img/ai-ready-infrastructure-roadmap.png" alt="Future-state Cytomining AI-ready infrastructure roadmap showing assay and microscopy image capture flowing through OME-Arrow, CytoTable, iceberg-bioimage, Polars, and the downstream quality control, profiling, and analysis layer." loading="lazy">
+  <figcaption>Future-state Cytomining infrastructure: image capture and feature extraction flow into OME-Arrow representations, CytoTable harmonizes single-cell formats, iceberg-bioimage organizes scalable warehouses, Polars provides a shared dataframe engine, and downstream tools support QC, profiling, and analysis.</figcaption>
+</figure>
 
 ## Roadmap summary
 
@@ -37,9 +42,9 @@ The roadmap addresses these gaps by making data co-located, queryable, versionab
 
 **Goal:** Integrate OME-Arrow across the Cytomining stack so microscopy images, segmentation geometries, morphology profiles, metadata, and QC annotations share a single schema-enforced data model.
 
-**Reviewer view:** This component removes a major source of manual reconciliation. Researchers should be able to trace a morphology measurement back to the source image and segmentation context without fragile joins across independent files.
+**Purpose:** This component removes a major source of manual reconciliation. Researchers should be able to trace a morphology measurement back to the source image and segmentation context without fragile joins across independent files.
 
-**Developer execution:**
+**Planned work:**
 
 | Deliverable | Implementation notes | Target |
 | --- | --- | --- |
@@ -60,9 +65,9 @@ The roadmap addresses these gaps by making data co-located, queryable, versionab
 
 **Goal:** Make Cytomining workflows efficient at population scale through lazy queries, faster dataframe execution, versioned bioimage catalogs, and release-indexed benchmarks.
 
-**Reviewer view:** This component lets researchers work with large-scale morphology data as queryable scientific infrastructure rather than local files that must be fully loaded and copied at each step.
+**Purpose:** This component lets researchers work with large-scale morphology data as queryable scientific infrastructure rather than local files that must be fully loaded and copied at each step.
 
-**Developer execution:**
+**Planned work:**
 
 | Deliverable | Implementation notes | Target |
 | --- | --- | --- |
@@ -78,15 +83,15 @@ The roadmap addresses these gaps by making data co-located, queryable, versionab
 - Benchmarks show major speed and memory improvements over pandas-based workflows across core pipeline stages.
 - At least one population-level reference dataset can be queried lazily without loading the full dataset into memory.
 - Benchmark results are published for at least two major Cytomining releases.
-- Developers can use benchmark output to identify bottlenecks before releases.
+- Benchmark output can identify bottlenecks before releases.
 
 ## Component 3: AI-Ready Image-Based Profiling
 
 **Goal:** Make Cytomining workflows executable by both researchers and code-writing agents through typed APIs, reusable workflow knowledge, and explicit human-in-the-loop decision points.
 
-**Reviewer view:** This component lowers the barrier to running image-based profiling while keeping expert biological judgment in the loop. AI systems can help execute workflows, but the roadmap explicitly defines where humans review, choose, and record decisions.
+**Purpose:** This component lowers the barrier to running image-based profiling while keeping expert biological judgment in the loop. AI systems can help execute workflows, but the roadmap explicitly defines where humans review, choose, and record decisions.
 
-**Developer execution:**
+**Planned work:**
 
 | Deliverable | Implementation notes | Target |
 | --- | --- | --- |
