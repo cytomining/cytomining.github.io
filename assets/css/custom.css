@@ -144,7 +144,7 @@ html.dark .hero-btn-primary  { background: #3b82f6 !important; }
 html.dark .hero-btn-outline  { border-color: #374151 !important; color: #d1d5db !important; }
 html.dark .hero-secondary-link { color: #6b7280 !important; border-bottom-color: #374151 !important; }
 
-/* Infrastructure roadmap document */
+/* Focused development initiative */
 .roadmap-doc {
   font-size: 0.95rem;
 }
@@ -158,6 +158,21 @@ html.dark .hero-secondary-link { color: #6b7280 !important; border-bottom-color:
 
 .roadmap-doc th {
   white-space: nowrap;
+}
+
+.roadmap-doc ul {
+  list-style: disc outside;
+  margin: 0.75rem 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.roadmap-doc li {
+  display: list-item;
+  padding-left: 0.15rem;
+}
+
+.roadmap-doc li::marker {
+  color: #16a34a;
 }
 
 .roadmap-doc strong {
@@ -196,6 +211,59 @@ html.dark .roadmap-figure img {
 
 html.dark .roadmap-figure figcaption {
   color: #9ca3af;
+}
+
+.focused-summary-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.focused-summary-grid > div {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+}
+
+.focused-summary-grid h3 {
+  font-size: 1rem;
+  font-weight: 750;
+  margin: 0.15rem 0 0.5rem;
+}
+
+.focused-summary-grid p,
+.focused-summary-grid li,
+.roadmap-doc td {
+  color: #4b5563;
+  line-height: 1.55;
+}
+
+.focused-kicker {
+  color: #16a34a !important;
+  font-size: 0.72rem !important;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  margin: 0 !important;
+  text-transform: uppercase;
+}
+
+html.dark .focused-summary-grid > div {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+html.dark .focused-summary-grid h3 {
+  color: #f3f4f6;
+}
+
+html.dark .focused-summary-grid p,
+html.dark .focused-summary-grid li,
+html.dark .roadmap-doc td {
+  color: #d1d5db;
+}
+
+html.dark .focused-kicker {
+  color: #86efac !important;
 }
 
 /* Inline code: remove Congo's visible backtick pseudo-elements, style like standard markdown */

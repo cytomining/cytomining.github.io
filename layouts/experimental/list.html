@@ -9,10 +9,9 @@
   </p>
 
   <div class="hero-fade-3 roadmap-link-callout" style="border-left: 3px solid #16a34a; padding: 1rem 1.25rem; background: #f0fdf4; border-radius: 0 8px 8px 0; margin-bottom: 2rem;">
-    <p style="font-weight: 700; font-size: 1rem; margin: 0 0 0.5rem; color: #166534;">AI-ready infrastructure plan</p>
+    <p style="font-weight: 700; font-size: 1rem; margin: 0 0 0.5rem; color: #166534;">Focused development initiative</p>
     <p style="margin: 0; font-size: 0.92rem; color: #14532d; line-height: 1.65;">
-      For the detailed implementation plan focused on OME-Arrow, single-cell scale efficiency, and AI-ready workflows,
-      see the <a href="/infrastructure-roadmap/" style="color: inherit; font-weight: 700; text-decoration: underline; text-decoration-color: #86efac;">AI-ready infrastructure roadmap</a>.
+      For the detailed implementation plan focused on OME-Arrow, single-cell scale efficiency, and AI-ready workflows, see the <a href="#focused-development-initiative" style="color: inherit; font-weight: 700; text-decoration: underline; text-decoration-color: #86efac;">AI-ready infrastructure initiative</a> below.
     </p>
   </div>
 
@@ -143,6 +142,295 @@
   <p class="hero-fade-8" style="font-size: 0.72rem; color: #9ca3af; margin-bottom: 2.5rem; font-style: italic;">
     Yellow = new 3D-capable step. Purple = new data infrastructure. Blue = existing Cytomining tools.
   </p>
+
+  <section id="focused-development-initiative" class="roadmap-doc" style="margin-top: 3.25rem;">
+    <h2 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem;">Focused development initiative</h2>
+    <p style="color: #6b7280; font-size: 1rem; line-height: 1.65; margin-bottom: 1rem;">
+      This initiative defines the next phase of Cytomining infrastructure work: unified multimodal data, efficient single-cell scale processing, and AI-ready image-based profiling.
+    </p>
+    <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.65; margin-bottom: 1rem;">
+      The work connects three streams: OME-Arrow for unified multimodal data representation, Polars and iceberg-bioimage for scalable single-cell data access, and typed APIs plus agent skills for AI-ready workflows with human-in-the-loop checkpoints.
+    </p>
+
+    <figure class="roadmap-figure">
+      <img src="/img/ai-ready-infrastructure-roadmap.png" alt="Future-state Cytomining AI-ready infrastructure roadmap showing assay and microscopy image capture flowing through OME-Arrow, CytoTable, iceberg-bioimage, Polars, and the downstream quality control, profiling, and analysis layer." loading="lazy">
+      <figcaption>Future-state Cytomining infrastructure: image capture and feature extraction flow into OME-Arrow representations, CytoTable harmonizes single-cell formats, iceberg-bioimage organizes scalable warehouses, Polars provides a shared dataframe engine, and downstream tools support QC, profiling, and analysis.</figcaption>
+    </figure>
+
+    <h3 style="font-size: 1.05rem; font-weight: 750; margin-top: 2rem;">Why this work matters</h3>
+    <p style="color: #4b5563; line-height: 1.6;">
+      Cytomining tools already support high-content microscopy workflows, but the surrounding data infrastructure still creates friction for large, single-cell image-based profiling projects.
+    </p>
+    <ul>
+      <li>Images, profiles, segmentation geometries, and QC annotations often live in separate files or stores.</li>
+      <li>Large single-cell datasets are difficult to query lazily across plates, projects, and public reference collections.</li>
+      <li>Workflow expertise is distributed across documentation, notebooks, and maintainer knowledge rather than encoded as typed APIs and reusable agent guidance.</li>
+    </ul>
+
+    <h3 style="font-size: 1.05rem; font-weight: 750; margin-top: 2rem;">Roadmap summary</h3>
+    <div class="focused-summary-grid">
+      <div>
+        <p class="focused-kicker">Component 1</p>
+        <h3>Unified multimodal data infrastructure</h3>
+        <p>Integrate OME-Arrow across the Cytomining stack so microscopy images, segmentation geometries, morphology profiles, metadata, and QC annotations share a schema-enforced data model.</p>
+        <ul>
+          <li>Native OME-Arrow read/write support in CytoTable.</li>
+          <li>Pycytominer and coSMicQC operation on OME-Arrow datasets.</li>
+          <li>Documentation, tutorials, and OME community specification work.</li>
+        </ul>
+      </div>
+      <div>
+        <p class="focused-kicker">Component 2</p>
+        <h3>Single-cell scale efficiency</h3>
+        <p>Make Cytomining workflows efficient at population scale through lazy queries, faster dataframe execution, versioned bioimage catalogs, and release-indexed benchmarks.</p>
+        <ul>
+          <li>Polars integration across Cytomining tools.</li>
+          <li>Benchmarking across AnnData, Zarr, CSV, SQLite, Parquet, DuckDB, Lance, and related approaches.</li>
+          <li>iceberg-bioimage support for FAIR, cloud-ready, version-controlled warehouses.</li>
+        </ul>
+      </div>
+      <div>
+        <p class="focused-kicker">Component 3</p>
+        <h3>AI-ready image-based profiling</h3>
+        <p>Make Cytomining workflows executable by both researchers and code-writing agents through typed APIs, reusable workflow knowledge, and explicit human-in-the-loop decision points.</p>
+        <ul>
+          <li>A versioned Cytomining ecosystem skill.</li>
+          <li>Agent-readable APIs, docstrings, and schemas across tools.</li>
+          <li>AI-readiness benchmarks against expert-validated reference workflows.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="font-size: 1.05rem; font-weight: 750; margin-top: 2rem;">Component 1 planned work: unified multimodal data infrastructure</h3>
+    <p style="color: #4b5563; line-height: 1.6;">
+      This component removes a major source of manual reconciliation. Researchers should be able to trace a morphology measurement back to the source image and segmentation context without fragile joins across independent files.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Deliverable</th>
+          <th>Implementation notes</th>
+          <th>Target</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>OME-Arrow schema and CytoTable read/write support</td>
+          <td>Add native OME-Arrow input and output paths in CytoTable. Verify numerical equivalence against public reference datasets such as JUMP-CP and RxRx19.</td>
+          <td>Year 1</td>
+        </tr>
+        <tr>
+          <td>Pycytominer and coSMicQC integration</td>
+          <td>Enable Pycytominer to operate directly on OME-Arrow datasets and coSMicQC to write QC annotations back into the same store.</td>
+          <td>Year 1</td>
+        </tr>
+        <tr>
+          <td>Documentation and tutorials</td>
+          <td>Publish OME-Arrow tutorials and revise Cytomining notebooks to show end-to-end workflows without format conversion.</td>
+          <td>Year 1</td>
+        </tr>
+        <tr>
+          <td>OME community specification</td>
+          <td>Prepare a formal OME-Arrow specification and participate in OME community review through public issues or pull requests.</td>
+          <td>Year 2</td>
+        </tr>
+        <tr>
+          <td>Project migration</td>
+          <td>Move OME-Arrow from WayScience to Cytomining once it meets ecosystem maturity expectations.</td>
+          <td>Year 2</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="focused-kicker" style="margin-top: 1rem !important;">Success indicators</p>
+    <ul>
+      <li>Fewer workflow steps are required to connect source images with morphology profiles compared with a documented baseline workflow.</li>
+      <li>End-to-end pipelines run without manual conversion between image, profile, and QC stores.</li>
+      <li>At least three external groups adopt OME-Arrow in public workflows, publications, or repositories.</li>
+      <li>OME community discussion shows documented progress toward broader standard recognition.</li>
+    </ul>
+
+    <h3 style="font-size: 1.05rem; font-weight: 750; margin-top: 2rem;">Component 2 planned work: single-cell scale efficiency</h3>
+    <p style="color: #4b5563; line-height: 1.6;">
+      This component lets researchers work with large-scale morphology data as queryable scientific infrastructure rather than local files that must be fully loaded and copied at each step.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Deliverable</th>
+          <th>Implementation notes</th>
+          <th>Target</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Polars integration</td>
+          <td>Integrate Polars across Cytomining tools for ingestion, QC, normalization, feature selection, and related table operations.</td>
+          <td>Year 1</td>
+        </tr>
+        <tr>
+          <td>Format and engine benchmark</td>
+          <td>Compare speed, memory, and storage across AnnData, Zarr, CSV, SQLite, Parquet, DuckDB, Lance, and related approaches.</td>
+          <td>Year 1</td>
+        </tr>
+        <tr>
+          <td>Release benchmark dashboard</td>
+          <td>Add automated benchmark runs for Cytomining releases and publish version-indexed results.</td>
+          <td>Year 1</td>
+        </tr>
+        <tr>
+          <td>iceberg-bioimage v1.0</td>
+          <td>Release cloud-agnostic object storage support with FAIR, version-controlled image cataloging.</td>
+          <td>Year 2</td>
+        </tr>
+        <tr>
+          <td>Cytomining integration for iceberg-bioimage</td>
+          <td>Connect iceberg-bioimage with CytoTable, coSMicQC, and Pycytominer through a reference pipeline notebook.</td>
+          <td>Year 2</td>
+        </tr>
+        <tr>
+          <td>Project migration</td>
+          <td>Move iceberg-bioimage from WayScience to Cytomining once it reaches production maturity.</td>
+          <td>Year 2</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="focused-kicker" style="margin-top: 1rem !important;">Success indicators</p>
+    <ul>
+      <li>Benchmarks show major speed and memory improvements over pandas-based workflows across core pipeline stages.</li>
+      <li>At least one population-level reference dataset can be queried lazily without loading the full dataset into memory.</li>
+      <li>Benchmark results are published for at least two major Cytomining releases.</li>
+      <li>Benchmark output can identify bottlenecks before releases.</li>
+    </ul>
+
+    <h3 style="font-size: 1.05rem; font-weight: 750; margin-top: 2rem;">Component 3 planned work: AI-ready image-based profiling</h3>
+    <p style="color: #4b5563; line-height: 1.6;">
+      This component lowers the barrier to running image-based profiling while keeping expert biological judgment in the loop. AI systems can help execute workflows, but human review, choices, and decisions remain explicit and recorded.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Deliverable</th>
+          <th>Implementation notes</th>
+          <th>Target</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cytomining ecosystem skill</td>
+          <td>Publish a versioned skill with tool-specific sections for pipeline orchestration, QC conventions, normalization strategies, and processing decisions.</td>
+          <td>Year 1</td>
+        </tr>
+        <tr>
+          <td>Agent-readable APIs</td>
+          <td>Validate function signatures, docstrings, and schemas across Cytomining tools using agentic coding systems.</td>
+          <td>Year 1</td>
+        </tr>
+        <tr>
+          <td>Human-in-the-loop taxonomy</td>
+          <td>Define biological judgment points, starting with QC threshold selection, and log human decisions into provenance records.</td>
+          <td>Year 1</td>
+        </tr>
+        <tr>
+          <td>AI-readiness benchmark suite</td>
+          <td>Evaluate agent-driven execution with and without the Cytomining skill against expert-validated reference outputs.</td>
+          <td>Year 2</td>
+        </tr>
+        <tr>
+          <td>Ecosystem protocol manuscript</td>
+          <td>Document the Cytomining ecosystem protocol and supporting technologies in a citable manuscript.</td>
+          <td>Year 2</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="focused-kicker" style="margin-top: 1rem !important;">Success indicators</p>
+    <ul>
+      <li>Agent-driven workflows complete more accurately and faster when using the Cytomining skill than when using baseline documentation alone.</li>
+      <li>Human decisions at biological judgment points are logged and can be reviewed after workflow execution.</li>
+      <li>At least two external groups without prior Cytomining expertise complete a profiling workflow using the skill and typed APIs.</li>
+      <li>Benchmark reports track correctness, time to completion, and divergence between agent recommendations and human choices.</li>
+    </ul>
+
+    <h3 style="font-size: 1.05rem; font-weight: 750; margin-top: 2rem;">Cross-cutting implementation principles</h3>
+    <ul>
+      <li><strong>Composable tools:</strong> Each component should improve the shared ecosystem without making any single tool monolithic.</li>
+      <li><strong>Public validation:</strong> Outputs should be checked against public reference datasets where possible.</li>
+      <li><strong>Provenance by default:</strong> Data transformations, QC annotations, human decisions, and agent actions should be recorded.</li>
+      <li><strong>Cloud-ready formats:</strong> Storage and query layers should work across local, HPC, and cloud object-storage environments.</li>
+      <li><strong>Maturity before migration:</strong> New projects should move from WayScience to Cytomining only after they have stable releases, documentation, tests, and active maintenance.</li>
+    </ul>
+
+    <h3 style="font-size: 1.05rem; font-weight: 750; margin-top: 2rem;">Dependencies and sequencing</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Sequence</th>
+          <th>Dependency</th>
+          <th>Rationale</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Define OME-Arrow schema and CytoTable I/O</td>
+          <td>The shared representation must exist before downstream tools can rely on it.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Integrate Pycytominer and coSMicQC with OME-Arrow</td>
+          <td>Processing and QC need to operate on the same data model to remove conversion steps.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Add Polars and benchmark infrastructure</td>
+          <td>Performance changes should be measured before and after integration across tools.</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Release iceberg-bioimage and reference notebooks</td>
+          <td>Versioned image catalogs should connect to the validated Cytomining data flow.</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Publish AI-ready APIs and ecosystem skill</td>
+          <td>Agent guidance should encode the stabilized workflow, not a moving target.</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Run AI-readiness benchmarks</td>
+          <td>Benchmarks should evaluate the integrated workflow against expert references.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size: 1.05rem; font-weight: 750; margin-top: 2rem;">Milestones</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Timeframe</th>
+          <th>Planned work</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Year 1</td>
+          <td>OME-Arrow schema and CytoTable I/O; Pycytominer and coSMicQC OME-Arrow support; Polars integration; release benchmark dashboard; first Cytomining ecosystem skill and API validation.</td>
+        </tr>
+        <tr>
+          <td>Year 2</td>
+          <td>OME-Arrow specification and adoption package; iceberg-bioimage v1.0 and Cytomining integration; AI-readiness benchmark suite; ecosystem protocol manuscript; mature project migration into Cytomining where appropriate.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size: 1.05rem; font-weight: 750; margin-top: 2rem;">What done looks like</h3>
+    <ul>
+      <li>Microscopy images, segmentation geometries, morphology profiles, metadata, and QC annotations can be co-located in an OME-Arrow-compatible representation.</li>
+      <li>Large single-cell datasets can be queried lazily and reproducibly across plates, screens, and releases.</li>
+      <li>CytoTable, coSMicQC, and Pycytominer expose typed, documented APIs suitable for both researchers and agentic workflows.</li>
+      <li>Human review at biological judgment points is preserved in provenance records.</li>
+      <li>Performance and AI-readiness can be compared across releases using public benchmark reports.</li>
+    </ul>
+  </section>
 
 
 
