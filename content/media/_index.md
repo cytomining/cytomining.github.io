@@ -5,6 +5,17 @@ showDate: false
 showAuthor: false
 ---
 
+## 🎬 Video
+
+**The Cytomining Ecosystem: Open Source Software for Image-Based Profiling**
+
+{{< youtube 2NpHYaQWlqU >}}
+
+## 📰 Press
+
+- **CU Anschutz News (July 2026):** _From Microscopes to Treatments: The Cytomining Ecosystem_
+  • [Read the article](https://news.cuanschutz.edu/dbmi/cytomining-open-source-image-based-profiling)
+
 ## 🎤 Talks
 
 - **SBI2 2025:** _Cytomining ecosystem overview_
